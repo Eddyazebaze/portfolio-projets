@@ -3,21 +3,29 @@
 👉 Le site WordPress est accessible ici :  
 🌐 [cybersecurite50.wordpress.com](https://cybersecurite50.wordpress.com)
 
-> ⚠️ Le site est un environnement public, utilisé uniquement pour une **démonstration technique** dans le cadre de ce projet d’audit de cybersécurité.
+> ⚠️ Ce site est un environnement de **démonstration**. Il ne contient aucun contenu sensible ni données utilisateurs.
 
 ---
 
-📸 Aperçu rapide :
+📸 **Aperçu visuel :**
 
-![aperçu site](./screenshots/wordpress-site-overview.png)
+![Aperçu site WordPress](./screenshots/site-wordpress-apercu.png)
 
 ---
 
-🎯 Objectif :
-Ce site WordPress a été créé dans une logique de **bac à sable (sandbox)** pour :
+## 🎯 Objectif
 
-- Simuler un environnement réel
-- Tester des outils comme **OWASP ZAP**, **Security Headers** ou **Mozilla Observatory**
-- Documenter un processus **concret** de sécurisation minimale
+Ce site a été créé spécifiquement pour :
 
-🔁 Le projet n'implique aucun backend ni collecte de données personnelles.
+- Déployer un environnement WordPress léger
+- Simuler une surface d’attaque réaliste
+- Lancer des audits via :
+  - OWASP ZAP
+  - [SecurityHeaders.com](https://securityheaders.com)
+  - [Mozilla Observatory](https://observatory.mozilla.org)
+- Documenter et démontrer une **démarche d’évaluation de sécurité** simple à répliquer
+
+---
+
+🔁 **Note :** Aucun backend, base de données ou extension personnalisée n’a été ajoutée.  
+Le projet est orienté **pédagogie, prévention et mise en pratique rapide.**
