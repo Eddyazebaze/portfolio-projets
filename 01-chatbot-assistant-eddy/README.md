@@ -3,7 +3,9 @@
 ![Statut](https://img.shields.io/badge/statut-déployé-brightgreen)
 [🔗 Démo en ligne](https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/27/01/20250727010732-RSM5BWL1.json)
 
-Bienvenue dans ce projet démonstrateur no-code conçu pour illustrer ma proposition de valeur augmentée en tant que chef de projet à l’ère de l’IA, de la GRC et de la conformité.
+Bienvenue dans ce projet démonstrateur no-code conçu pour illustrer ma proposition de valeur augmentée en tant que chef de projet transversal à l’ère de l’IA, de la GRC, de la data et de la conformité.
+
+Ce projet intègre également une démarche de **veille technologique stratégique**, avec une comparaison structurée des outils concurrents à Botpress (voir [`resources-outils-chatbot.md`](./resources-outils-chatbot.md)).
 
 ---
 
@@ -15,14 +17,22 @@ Créer un assistant virtuel professionnel accessible en ligne, qui centralise ma
 
 ## 🧠 Contexte / Pourquoi
 
-Les projets IA/GRC se multiplient mais manquent souvent d’ancrage métier ou de référentiel clair.  
-Cet assistant illustre ma capacité à formaliser une offre et à la rendre accessible via un outil concret, lisible, actionnable :
+À l’ère des projets hybrides et augmentés, les professionnels doivent être capables de **présenter clairement leur proposition de valeur** de manière engageante, démontrable, et contextualisée.
 
-- pour un prospect entreprise,
-- un recruteur,
-- un partenaire formation.
+Ce chatbot a été conçu comme un **assistant vitrine**, illustrant mon positionnement de chef de projet transversal dans les domaines suivants :
 
-Il est également un point d’entrée stratégique vers mes autres livrables.
+- 🎯 GRC (Gouvernance, Risques, Conformité)
+- 🧠 IA & projets augmentés
+- 📊 Data & Insights
+- 🏆 PMP® & stratégie projet
+
+Il permet à un prospect, un recruteur ou un partenaire de découvrir :
+- mes offres,
+- mes projets GitHub,
+- ma méthodologie AZEBAZE,
+- des cas d’usage clés et des prompts personnalisés.
+
+C’est un **point d’entrée conversationnel stratégique**, à la fois technique, narratif et différenciant.
 
 ---
 
@@ -39,7 +49,7 @@ Il est également un point d’entrée stratégique vers mes autres livrables.
 
 - Assistant virtuel en ligne
 - Cas d’usage : prompts, offres, projets, persona
-- Documentation : `README.md` + `demo.md` + `iframe.md`
+- Documentation : `README.md` + `demo.md` + `iframe.md` + `resources-outils-chatbot.md`
 - Captures visuelles et fichiers exportés
 - Page Notion & article Medium (à venir)
 
@@ -91,6 +101,7 @@ Configuration du bot dans Botpress Cloud :
 - [🟢 Démo Botpress](https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/27/01/20250727010732-RSM5BWL1.json)
 - [`demo.md`](./demo.md) – Retour d’expérience complet
 - [`iframe.md`](./iframe.md) – Aperçu iframe
+- [`resources-outils-chatbot.md`](./resources-outils-chatbot.md) – Comparatif Botpress/Dialogflow + veille stratégique
 - `/exports/` – Export JSON du flow (à venir)
 - `/screenshots/` – Captures visuelles
 
