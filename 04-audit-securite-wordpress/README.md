@@ -1,121 +1,72 @@
-# 🔐 Audit Sécurité **WordPress** | Projet CyberSécurité50
+# 🔒 Audit Sécurité WordPress | OWASP • GRC • CISM
 
-![Statut](https://img.shields.io/badge/statut-complet-brightgreen)  
-📅 Juillet 2025 • 💼 Projet personnel • 🛡️ Cybersécurité Web
-
----
+![Statut](https://img.shields.io/badge/statut-finalisé-brightgreen) [🔗 Site Web](https://cybersecurite50.wordpress.com)
 
 ## 🎯 Objectif
+Réaliser un audit de sécurité d’un site WordPress public en utilisant des outils professionnels reconnus, dans une logique démonstrative et pédagogique.
 
-Mettre en œuvre un audit de sécurité sur un site **WordPress** basique déployé publiquement, afin d’évaluer les **vulnérabilités** communes, sensibiliser à la sécurisation des CMS, et documenter un processus reproductible par des équipes projets, cybersécurité ou IT GRC.
-
----
-
-## 🧩 Contexte stratégique
-
-**WordPress** est le CMS le plus utilisé au monde, donc également le plus ciblé par les attaques.  
+## 📌 Contexte stratégique
+**WordPress est le CMS le plus utilisé au monde**, donc également le plus ciblé par les attaques.  
 Ce projet vise à démontrer :
-- La capacité à configurer un site de test.
-- La conduite d’un audit de sécurité via des outils professionnels open-source.
-- La synthèse claire et actionnable des résultats pour des décideurs ou équipes projets.
+- La **capacité à configurer un site de test** WordPress.
+- La **conduite d’un audit de sécurité** via des outils professionnels open-source.
+- La **synthèse claire et actionnable** des résultats pour des décideurs ou équipes projets.
 
----
-
-## 🛠️ Technologies & Outils
-
-- **CMS** : **WordPress**.com (version gratuite)
-- **Audit** :
-  - **OWASP ZAP** (scan automatisé et manuel)
-  - [SecurityHeaders.com](https://securityheaders.com)
-  - [Mozilla Observatory](https://observatory.mozilla.org)
-- **Documentation** : Markdown + GitHub
-- **Design & contenu** : visuels générés, pages simulées, rapport synthétique
-
----
+## 🛠️ Technologies / Outils
+- **WordPress** (hébergement via wordpress.com)
+- **OWASP ZAP** (scan de vulnérabilités)
+- **Mozilla HTTP Observatory**
+- **SecurityHeaders.com**
 
 ## 📦 Livrables
+- Site WordPress configuré et accessible publiquement
+- Captures du scan OWASP ZAP et des tests tiers
+- Fichier `security-summary.md` avec synthèse des vulnérabilités
+- Rapport PDF des outils externes + CSV export ZAP (`/exports/`)
+- Documentation GitHub complète avec démonstration, visualisations, et Iframe intégré
 
-| Type | Emplacement |
-|------|-------------|
-| 🔍 Rapport ZAP | `/exports/zap/` |
-| 🧾 Rapports Mozilla & SecurityHeaders | `/exports/` |
-| 📷 Captures **WordPress** & scans | `/screenshots/` |
-| 🧠 Synthèse stratégique | `security-summary.md` |
-| 🌐 Pages site **WordPress** | `pages-web/` |
-| 📄 README, démo, iframe, ressources | racine du projet |
-
----
-
-## 🚀 Approche chef de projet
-
-1. **Création du site **WordPress****
-   - Design épuré, contenu structuré : home, pages audit, résultats, méthodologie
-2. **Lancement des audits**
-   - **OWASP ZAP** + sites en ligne
-3. **Documentation et structuration GitHub**
-   - Screenshots, exports, README, synthèse
-4. **Analyse croisée & publication**
-
----
+## 📐 Approche chef de projet
+1. **Préparation du site** : installation WordPress, configuration minimale, mise en ligne
+2. **Scan automatique** avec 3 outils complémentaires (ZAP, Observatory, Headers)
+3. **Analyse croisée** des résultats et identification des correctifs à haute priorité
+4. **Structuration GitHub** pour un rendu clair, pro et pédagogique
 
 ## 🧠 Insights clés
-
-- 🔴 Headers de sécurité manquants sur **WordPress**.com (limité en configuration)
-- 🟡 Vulnérabilités HTML révélées (par exemple X-Frame-Options)
-- 🟢 ZAP montre une surface d’attaque minimale grâce à l’absence de plugin tiers
-
-⚠️ Attention : version gratuite **WordPress** = faible personnalisation possible, mais bon environnement de test
-
----
+- Le score de sécurité peut varier fortement selon les headers HTTP configurés
+- L’audit automatique détecte les faiblesses même sur des sites WordPress par défaut
+- OWASP ZAP est idéal en complément des outils en ligne pour approfondir
 
 ## 🤖 Projection IA & extensions possibles
-
-- Intégration automatique avec GitHub Actions pour scanner tout nouveau site pushé.
-- Rapport enrichi avec scoring OWASP Top 10.
-- Démonstrateur d’audit live pour formations ou ateliers.
-
----
+- **Intégration automatique avec GitHub Actions** pour scanner tout nouveau site pushé.
+- **Rapport enrichi** avec scoring OWASP Top 10.
+- **Démonstrateur d’audit live** pour formations ou ateliers cybersécurité.
 
 ## 🎯 Cas d’usage
-
-- Démonstration de compétences CISM / GRC / Audit sécurité
-- Support d’atelier ou bootcamp cybersécurité niveau débutant
-- Outil de sensibilisation pour décideurs non-tech
-
----
+- **Démonstration de compétences** CISM / GRC / audit sécurité.
+- **Support d’atelier ou bootcamp** cybersécurité niveau débutant.
+- **Outil de sensibilisation** pour décideurs non-tech.
 
 ## 🎯 Public cible
+- **DSI, RSSI, équipes GRC**, développeurs, étudiants en cybersécurité.
 
-- **DSI**, **RSSI**, équipes GRC, développeurs, étudiants en cybersécurité
-
----
-
-## 🗂️ Arborescence du projet
-
+## 📁 Arborescence du dossier
 ```
-04-audit-securite-wordpress/
-├── README.md
-├── demo.md
-├── iframe.md
-├── resources-outils-cyber.md
-├── /exports/
-│   ├── security-summary.md
-│   ├── observatory-mdn.pdf
-│   ├── securityheaders-com.pdf
-│   └── /zap/
-│       ├── Automated Scan_Zap.csv
-│       └── zap-result.md
-├── /screenshots/
-├── /pages-web/
+04-audit-wordpress-securite
+│
+├── README.md                  → Fichier principal
+├── demo.md                   → Aperçu de l’audit et du site
+├── iframe.md                 → Iframe intégrable du site WordPress
+├── security-summary.md       → Résumé des résultats du scan
+├── /pages-web/               → Captures des pages WordPress créées
+├── /screenshots/             → Visuels du site, scans, résultats
+├── /exports/                 → Rapports ZAP, PDF Observatory & Headers
+├── resources-outils-audit.md → Liens vers les outils utilisés et références
 ```
 
----
+## 📫 Contact
+**Eddy AZEBAZE**  
+Consultant GRC • PMP® • IA & Cybersécurité  
+[www.linkedin.com/in/eddy-azebaze-034a20226](https://www.linkedin.com/in/eddy-azebaze-034a20226)
 
-## 📬 Contact
-
-Eddy AZEBAZE - Consultant GRC / IA / PMP®  
-📧 eddy.azebaze@proton.me • [LinkedIn](https://www.linkedin.com/in/eddy-azebaze-034a20226)
-
----
-
-> “L’audit n’est pas une contrainte, c’est un miroir de maturité.”  
+## 🧭 Citation finale
+> "Ce n’est pas l’outil qui fait l’audit, mais la clarté stratégique qu’on en tire."
