@@ -62,7 +62,7 @@ Effectuer un **audit technique et stratégique de sécurité** sur un site WordP
 
 | Type                        | Lien                                                                 |
 |-----------------------------|----------------------------------------------------------------------|
-| 🌐 Site WordPress testé     | [cybersecurite50.wordpress.com](https://cybersecurite50.wordpress.com) |
+| 🌐 Site WordPress configuré et testé     | [cybersecurite50.wordpress.com](https://cybersecurite50.wordpress.com) |
 | 📄 Synthèse complète        | [`security-summary.md`](./exports/security-summary.md)               |
 | 📋 Checklist sécurité       | [`checklist-securite.md`](./checklist-securite.md)                   |
 | 🖼️ Captures visuelles       | [`/screenshots/`](./screenshots/)                                    |
