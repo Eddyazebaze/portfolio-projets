@@ -28,8 +28,8 @@ Chaque projet suit un format clair :
 |----------|----------------|------------------|--------|
 | **AI Act Readiness Scorecard** | Score de conformité réglementaire IA (auto-évaluation rapide) | HTML, JS, Vercel | À venir |
 | **AI Conformity Alert Flow** | Automatisation des alertes IA via Make | Make, Notion, Email | À venir |
-| **Project Value Canvas** | Canvas visuel pour identifier la valeur projet (Business, Regulatory, etc.) | Miro / HTML | À venir |
-| Audit sécurité WordPress | Check-up de sécurité + recommandations concrètes | WPScan, GitHub | [voir le dossier](https://github.com/Eddyazebaze/portfolio-projets/tree/main/04-audit-securite-wordpress) |
+| **Project Value Canvas** | Canvas visuel pour identifier la valeur projet (Business, Regulatory, etc.) | Miro / HTML | [voir le dossier](https://github.com/Eddyazebaze/portfolio-projets/tree/main/04-project-value-canvas) |
+| **Audit sécurité WordPress** | Check-up de sécurité + recommandations concrètes | WPScan, GitHub | [voir le dossier](https://github.com/Eddyazebaze/portfolio-projets/tree/main/04-audit-securite-wordpress) |
 | **Analyse dépenses santé – BI** | Tableaux de bord santé + analyse insights personnels | Excel, Power BI | [ Voir le projet](./06-analytics-sante-bi/) |
 |**Assistant Virtuel Eddy AZEBAZE** | Chatbot pro (Botpress) : IA, GRC, Data & Insights, PMP®, IT Strategy | Botpress (no-code) | [voir le dossier](./01-chatbot-assistant-eddy) |
 
