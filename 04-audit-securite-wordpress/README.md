@@ -1,10 +1,13 @@
 # 🔒 Audit Sécurité WordPress | OWASP • GRC • CISM
 
 ![Statut](https://img.shields.io/badge/statut-finalisé-brightgreen)
-![Score Initial](https://img.shields.io/badge/Score_Mozilla-F-red)
-![Objectif](https://img.shields.io/badge/Objectif-B%2B-blue)
+![Score Initial Mozilla](https://img.shields.io/badge/Score_Mozilla-F-red)
+![Objectif Mozilla](https://img.shields.io/badge/Objectif-B%2B-blue)
+![Security Headers](https://img.shields.io/badge/Security_Headers-D-orange)
 
 > Ce projet met en œuvre un audit de sécurité complet d’un site WordPress, en mobilisant les bonnes pratiques OWASP, des outils de scan reconnus, une approche GRC, et une restitution exploitable pour RSSI, PMO ou décideur IT.
+
+👉 Voir la [synthèse complète](./exports/security-summary.md) pour les résultats détaillés.
 
 ---
 
@@ -35,7 +38,7 @@ Effectuer un **audit technique de sécurité** sur un site WordPress en producti
 - **Normes & conformité** : RGPD, NIS2, ISO 27001
 - **Stack analysée** : CMS WordPress hébergé sur wordpress.com
 - **Positionnement** : documentation remédiable, traçable, auditable
-- **Finalité** : produire des livrables compréhensibles, même pour un public non technique
+- **Finalité** : produire des livrables compréhensibles, y compris pour un public fonctionnel ou non technique (RSSI junior, PMO...)
 
 ---
 
@@ -55,10 +58,10 @@ Effectuer un **audit technique de sécurité** sur un site WordPress en producti
 
 | Type                      | Lien                                                                 |
 |---------------------------|----------------------------------------------------------------------|
+| 🌐 Site WordPress configuré | [cybersecurite50.wordpress.com](https://cybersecurite50.wordpress.com) |
 | 📄 Synthèse complète       | [`security-summary.md`](./exports/security-summary.md)               |
 | 📋 Checklist sécurité     | [`checklist-securite.md`](./checklist-securite.md)                   |
 | 🖼️ Captures visuelles     | [`/screenshots/`](./screenshots/)                                    |
-| 🌐 Version en ligne       | [cybersecurite50.wordpress.com](https://cybersecurite50.wordpress.com) |
 | 📁 Données brutes         | [`exports/`](./exports/)                                             |
 
 ---
@@ -87,11 +90,11 @@ Effectuer un **audit technique de sécurité** sur un site WordPress en producti
 
 ## 📌 Méthodologie
 
-1. Scan initial via OWASP ZAP, Security Headers et Mozilla Observatory
-2. Lecture des entêtes HTTP et analyse des cookies & protocoles
-3. Synthèse Markdown + visuels & export .csv des résultats
-4. Plan d’action basé sur criticité OWASP + conformité GRC (RGPD/NIS2)
-5. Structuration GitHub et documentation versionée
+1. Création & configuration d’un site WordPress de test
+2. Scan initial via OWASP ZAP, Security Headers et Mozilla Observatory
+3. Analyse manuelle des entêtes HTTP, cookies & protocoles
+4. Structuration d’un plan d’action GRC (RGPD, NIS2)
+5. Documentation versionée + livrables Markdown, CSV & screenshots
 
 ---
 
