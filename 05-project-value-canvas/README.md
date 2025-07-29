@@ -1,6 +1,23 @@
+
 # 🎯 Project Value Canvas | Visualisation de la valeur projet
 
 ![Statut](https://img.shields.io/badge/statut-d%C3%A9ploy%C3%A9-lightgrey)
+
+## ⚡ Pitch express
+
+> Le *Project Value Canvas*, c’est un outil visuel stratégique pour cadrer les projets à fort enjeu en combinant :
+> - une *lecture métier* centrée sur la valeur créée,
+> - une *prise en compte des risques IA et GRC* (AI Act, RGPD…),
+> - et une *logique de ROI* pour arbitrer efficacement.
+
+🎯 Résultat : une vision claire, synthétique, actionnable — utile dès les premières discussions entre métiers, IT, conformité et sponsors.
+
+🔗 *Démo en ligne* : [Voir sur Vercel](https://project-value-canvas.vercel.app)  
+📎 *Téléchargement* : [emergent-export.zip](./exports/emergent-export.zip)  
+📘 *Méthodologie* : [methodologie-canvas.md](./resources/methodologie-canvas.md)  
+📞 *Réserver un appel* : [Calendly 30min](https://calendly.com/eddy-azebaze-proton/30min)
+
+---
 
 ## 🎯 Objectif  
 Proposer un **canvas visuel stratégique** pour aider les chefs de projet, PMO et décideurs à :
@@ -8,10 +25,12 @@ Proposer un **canvas visuel stratégique** pour aider les chefs de projet, PMO e
 - Aligner les enjeux business, IT, GRC, IA, sécurité
 - Faciliter les arbitrages rapides et documentés
 
+---
+
 ## 🧭 Contexte stratégique  
 Dans les projets IT à forts enjeux, la valeur réelle est souvent diluée :
 - Multitude de parties prenantes
-- Risques réglementaires (AI Act, RGPD, NIS2…)
+- Risques réglementaires (AI Act, RGPD, NIS2 …)
 - Tensions entre delivery et gouvernance
 
 Ce **canvas** agit comme un **outil d’aide à la décision** pour reconnecter la gouvernance à l’impact terrain.
@@ -21,7 +40,7 @@ Ce **canvas** agit comme un **outil d’aide à la décision** pour reconnecter 
 ## 🛠️ Technologies / Outils  
 - **Emergent.sh** (No-code app builder)
 - Export `.zip` personnalisé (visuel + config)
-- Déploiement sur **Vercel** pour démonstration
+- Déploiement sur **Vercel** ([voir détails](./vercel-deployment.md))
 - Visualisation responsive intégrable dans Notion ou Miro (si besoin)
 
 ---
@@ -29,7 +48,7 @@ Ce **canvas** agit comme un **outil d’aide à la décision** pour reconnecter 
 ## 📦 Livrables  
 - Canvas interactif déployé via Vercel (ou intégré)
 - Fichier `.zip` exporté depuis Emergent
-- Fiches README (racine + exports + méthodologie)
+- Fiches README (racine + exports + méthodologie + déploiement)
 - Captures d’écran du canvas
 
 ---
@@ -86,15 +105,17 @@ Ce **canvas** agit comme un **outil d’aide à la décision** pour reconnecter 
 ```
 05-project-value-canvas/
 ├── README.md
-├── screenshots/
-│   ├── apercu-canvas.png
-│   └── README.md
+├── index.html
+├── vercel-deployment.md
 ├── exports/
 │   ├── emergent-export.zip
 │   └── README.md
-└── resources/
-    ├── methodologie-canvas.md
-    └── README.md
+├── resources/
+│   ├── methodologie-canvas.md
+│   └── README.md
+├── screenshots/
+│   ├── apercu-canvas.png
+│   └── README.md
 ```
 
 ---
