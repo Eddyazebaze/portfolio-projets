@@ -24,14 +24,16 @@ Chaque projet suit un format clair :
 
 ## 🔍 Projets inclus
 
-| 📌 Projet | 🎯 Description | 🛠️ Stack / Outil | 📎 Lien |
-|----------|----------------|------------------|--------|
-| **AI Act Readiness Scorecard** | Score de conformité réglementaire IA (auto-évaluation rapide) | HTML, JS, Vercel | À venir |
-| **AI Conformity Alert Flow** | Automatisation des alertes IA via Make | Make, Notion, Email | À venir |
-| **Project Value Canvas** | Canvas visuel pour identifier la valeur projet (Business, Regulatory, etc.) | Emergent.sh / HTML | [voir le dossier](https://github.com/Eddyazebaze/portfolio-projets/tree/main/05-project-value-canvas) |
-| **Audit sécurité WordPress** | Check-up de sécurité + recommandations concrètes | WPScan, GitHub | [voir le dossier](https://github.com/Eddyazebaze/portfolio-projets/tree/main/04-audit-securite-wordpress) |
-| **Analyse dépenses santé – BI** | Tableaux de bord santé + analyse insights personnels | Excel, Power BI | [ Voir le projet](./06-analytics-sante-bi/) |
-|**Assistant Virtuel Eddy AZEBAZE** | Chatbot pro (Botpress) : IA, GRC, Data & Insights, PMP®, IT Strategy | Botpress (no-code) | [voir le dossier](./01-chatbot-assistant-eddy) |
+Ces projets sont concrets, documentés et déployés – ils reflètent ma capacité à penser et livrer des outils à impact pour les DSI, PMO, RSSI et directions métiers.
+
+| Projet                             | Description                                                          | Lien                                                   |
+|------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------|
+| **Assistant Virtuel Eddy AZEBAZE** | Chatbot IA : PMP®, IA, GRC, stratégie IT                             | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/01-chatbot-assistant-eddy) · [Démo](https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/27/01/20250727010732-RSM5BWL1.json) |
+| **Analyse Dépenses Santé – BI**    | Tableaux de bord stratégiques sur les dépenses santé                 | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/06-analytics-sante-bi) · [Reporting](https://app.powerbi.com/links/...) |
+| **Audit Sécurité WordPress**       | Audit technique OWASP + recommandations concrètes                    | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/04-audit-securite-wordpress) · [Synthèse](https://cybersecurite50.wordpress.com) |
+| **Project Value Canvas**           | Canvas stratégique de cadrage de la valeur projet                    | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/05-project-value-canvas) · [Démo](https://project-value-canvas.vercel.app/) |
+| **AI Act Readiness Scorecard**     | Score d’auto-évaluation IA + plan d'action réglementaire             | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/02-ai-act-readiness-scorecard) · [Scorecard](https://ai-act-score.vercel.app) |
+| **AI Conformity Alert Flow**       | Système d'alerte automatisée pour risques IA (Make.com)              | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/03-ai-conformity-alert-flow) |
 
 ---
 
