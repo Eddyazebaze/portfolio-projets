@@ -1,44 +1,48 @@
+
 # 🔒 Audit Sécurité WordPress | OWASP • GRC • CISM
 
 ![Statut](https://img.shields.io/badge/statut-finalisé-brightgreen)
-![Score Initial Mozilla](https://img.shields.io/badge/Score_Mozilla-F-red)
-![Objectif Mozilla](https://img.shields.io/badge/Objectif-B%2B-blue)
+![Score Mozilla](https://img.shields.io/badge/Score_Mozilla-F-red)
 ![Security Headers](https://img.shields.io/badge/Security_Headers-D-orange)
+![Objectif](https://img.shields.io/badge/Objectif-B%2B-blue)
 
 > Ce projet met en œuvre un audit de sécurité complet d’un site WordPress, en mobilisant les bonnes pratiques OWASP, des outils de scan reconnus, une approche GRC, et une restitution exploitable pour RSSI, PMO ou décideur IT.
-
-👉 Voir la [synthèse complète](./exports/security-summary.md) pour les résultats détaillés.
 
 ---
 
 ## 📌 Contexte stratégique
 
-**WordPress est le CMS le plus utilisé au monde**, donc également le plus ciblé par les attaques.  
+**WordPress est le CMS le plus utilisé au monde**, donc également le plus ciblé par les attaques.
+
 Ce projet démontre :
 
-- La capacité à configurer un site WordPress de test.
-- La conduite d’un audit de sécurité outillé et structuré.
-- Une synthèse claire orientée gouvernance sécurité.
+- La capacité à configurer un site WordPress public pour un test d’audit.
+- La conduite d’un audit de sécurité structuré et outillé.
+- Une restitution compréhensible pour un public technique ou non-technique.
+- Une approche orientée GRC pour garantir traçabilité, conformité et impact.
 
 ---
 
 ## 🎯 Objectif
 
-Effectuer un **audit technique de sécurité** sur un site WordPress en production pour :
+Effectuer un **audit technique et stratégique de sécurité** sur un site WordPress pour :
 
 - Identifier les vulnérabilités critiques (OWASP, HTTP headers…)
-- Évaluer les failles de configuration et de surface d’attaque
-- Structurer un plan d’action priorisé accessible à tout niveau
-- Fournir des livrables clairs et actionnables à destination des décideurs
+- Proposer des recommandations concrètes, classées par priorité
+- Fournir un plan d’action accessible à tous (développeur, DSI, RSSI, chef de projet…)
+- Générer des livrables actionnables, traçables et auditables
 
 ---
 
-## 🧱 Cadre d'analyse GRC
+## 🧱 Cahier des charges
 
-- **Normes & conformité** : RGPD, NIS2, ISO 27001
-- **Stack analysée** : CMS WordPress hébergé sur wordpress.com
-- **Positionnement** : documentation remédiable, traçable, auditable
-- **Finalité** : produire des livrables compréhensibles, y compris pour un public fonctionnel ou non technique (RSSI junior, PMO...)
+| Élément             | Détail                                                                 |
+|---------------------|------------------------------------------------------------------------|
+| 🧪 Périmètre         | Site WordPress déployé sur wordpress.com                               |
+| 🎯 Objectif          | Démontrer un audit GRC-ready accessible aux parties prenantes          |
+| 🧰 Contraintes       | Outils gratuits / open source                                          |
+| 📊 Public cible      | Décideurs sécurité, chefs de projet, consultants GRC                   |
+| 🧠 Résultat attendu  | Score > B+ Mozilla Observatory, restitution actionnable, site traçable |
 
 ---
 
@@ -49,20 +53,23 @@ Effectuer un **audit technique de sécurité** sur un site WordPress en producti
 | `OWASP ZAP`            | Scan de vulnérabilités automatisé                 | [🔗](https://www.zaproxy.org/) |
 | `Mozilla Observatory`  | Analyse des entêtes HTTP                         | [🔗](https://observatory.mozilla.org/) |
 | `Security Headers`     | Vérification des headers de sécurité              | [🔗](https://securityheaders.com/) |
-| `WordPress`            | Plateforme cible de l’audit                       | [🔗](https://wordpress.com/) |
-| `Markdown`             | Documentation et synthèse structurée             | —    |
+| `WordPress.com`        | Plateforme cible de l’audit                       | [🔗](https://wordpress.com/) |
+| `Markdown`             | Documentation & synthèse                          | —    |
 
 ---
 
 ## 📦 Livrables
 
-| Type                      | Lien                                                                 |
-|---------------------------|----------------------------------------------------------------------|
-| 🌐 Site WordPress configuré | [cybersecurite50.wordpress.com](https://cybersecurite50.wordpress.com) |
-| 📄 Synthèse complète       | [`security-summary.md`](./exports/security-summary.md)               |
-| 📋 Checklist sécurité     | [`checklist-securite.md`](./checklist-securite.md)                   |
-| 🖼️ Captures visuelles     | [`/screenshots/`](./screenshots/)                                    |
-| 📁 Données brutes         | [`exports/`](./exports/)                                             |
+| Type                        | Lien                                                                 |
+|-----------------------------|----------------------------------------------------------------------|
+| 🌐 Site WordPress testé     | [cybersecurite50.wordpress.com](https://cybersecurite50.wordpress.com) |
+| 📄 Synthèse complète        | [`security-summary.md`](./exports/security-summary.md)               |
+| 📋 Checklist sécurité       | [`checklist-securite.md`](./checklist-securite.md)                   |
+| 🖼️ Captures visuelles       | [`/screenshots/`](./screenshots/)                                    |
+| 📁 Données brutes           | [`exports/`](./exports/)                                             |
+| 🎥 Démonstration visuelle   | [`demo.md`](./demo.md)                                               |
+| 🧰 Outils & ressources       | [`resources-outils-cyber.md`](./resources-outils-cyber.md)           |
+| 🌍 Intégration iframe       | [`iframe.md`](./iframe.md)                                           |
 
 ---
 
@@ -74,7 +81,7 @@ Effectuer un **audit technique de sécurité** sur un site WordPress en producti
 | Headers manquants                  | CSP, HSTS, X-Frame-Options (via Mozilla Observatory)        |
 | Score Mozilla Observatory initial  | F / 100                                                     |
 | Score Security Headers             | D                                                           |
-| Remédiations proposées             | HTTPS forcé, ajout entêtes via plugins                      |
+| Recommandations proposées          | HTTPS forcé, plugins headers, durcissement cookies          |
 
 ---
 
@@ -90,11 +97,11 @@ Effectuer un **audit technique de sécurité** sur un site WordPress en producti
 
 ## 📌 Méthodologie
 
-1. Création & configuration d’un site WordPress de test
-2. Scan initial via OWASP ZAP, Security Headers et Mozilla Observatory
-3. Analyse manuelle des entêtes HTTP, cookies & protocoles
-4. Structuration d’un plan d’action GRC (RGPD, NIS2)
-5. Documentation versionée + livrables Markdown, CSV & screenshots
+1. Déploiement & configuration du site WordPress public
+2. Scan via OWASP ZAP, Security Headers et Mozilla Observatory
+3. Lecture des entêtes HTTP et analyse des cookies & protocoles
+4. Synthèse Markdown + export CSV + visuels
+5. Plan d’action GRC-ready et documentation versionée sur GitHub
 
 ---
 
@@ -105,31 +112,31 @@ Effectuer un **audit technique de sécurité** sur un site WordPress en producti
 | 🚨 Sécurité HTTP                   | Headers critiques absents ou mal configurés                          |
 | 🔐 Cookies                         | Non marqués `HttpOnly`, `Secure` ou `SameSite`                       |
 | 🧱 OWASP ZAP                       | Vulnérabilités exposant des infos sur le serveur                     |
-| 🧭 GRC                             | Documentation formalisée pour RSSI / conformité                      |
+| 🧭 GRC                             | Documentation orientée conformité, traçabilité, et priorisation      |
 
 ---
 
-## 🚀 Projection IA / automatisation
+## 🚀 Projection IA / Automatisation
 
-- Intégration d’un pipeline CI/CD + scans réguliers avec ZAP
-- Génération automatique de rapports Markdown ou Notion
-- Suivi de conformité RGPD/NIS2/DORA
+- Intégration dans un pipeline CI/CD avec scans automatisés
+- Génération automatique de rapports Markdown / Notion
+- Suivi de conformité RGPD / NIS2 / DORA
 
 ---
 
 ## 🎯 Cas d’usage
 
-- **RSSI / DSI / Décideurs sécurité** : audit initial + plan d’action rapide
-- **Chefs de projet** : intégration sécurité dès la phase de design
-- **Consultants conformité** : démonstration RGPD-ready & support client
+- **RSSI / DSI / Décideurs sécurité** : audit initial + roadmap actionnable
+- **Chefs de projet** : démonstration sécurité dès la phase de design
+- **Consultants conformité** : preuve RGPD-ready et support d'évaluation client
 
 ---
 
 ## 👥 Public cible
 
 - RSSI / DSI / PMO / Responsable conformité
-- Étudiants & formateurs en cybersécurité ou GRC
-- Équipes projets web / DevOps
+- Étudiants et formateurs en cybersécurité ou GRC
+- Équipes projet web / DevSecOps
 
 ---
 
