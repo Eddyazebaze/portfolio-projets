@@ -10,31 +10,32 @@
 
 ## 📌 Contexte stratégique
 
-**WordPress est le CMS le plus utilisé au monde**, donc également le plus ciblé par les attaques.
+**WordPress est le CMS le plus utilisé au monde**, donc également le plus ciblé par les attaques.  
+Ce projet démontre :
 
-Ce projet vise à démontrer :
-
-- **La capacité à configurer un site de test** WordPress.
-- **La conduite d’un audit de sécurité** via des outils professionnels open-source.
-- **La synthèse claire et actionnable** des résultats pour des décideurs ou équipes projets.
+- La capacité à configurer un site WordPress de test.
+- La conduite d’un audit de sécurité outillé et structuré.
+- Une synthèse claire orientée gouvernance sécurité.
 
 ---
 
 ## 🎯 Objectif
 
-Réaliser un **audit technique de sécurité** sur un site WordPress à l’aide d’outils open source, afin de :
+Effectuer un **audit technique de sécurité** sur un site WordPress en production pour :
 
-- Identifier les failles critiques (OWASP, HTTP headers, etc.)
-- Proposer des **recommandations concrètes et applicables**
-- Produire un livrable documenté pour renforcer la gouvernance sécurité (CISM-ready)
+- Identifier les vulnérabilités critiques (OWASP, HTTP headers…)
+- Évaluer les failles de configuration et de surface d’attaque
+- Structurer un plan d’action priorisé accessible à tout niveau
+- Fournir des livrables clairs et actionnables à destination des décideurs
 
 ---
 
 ## 🧱 Cadre d'analyse GRC
 
 - **Normes & conformité** : RGPD, NIS2, ISO 27001
-- **Stack analysée** : CMS WordPress en production
-- **Approche orientée décideur** : priorisation des risques + remédiations exploitables
+- **Stack analysée** : CMS WordPress hébergé sur wordpress.com
+- **Positionnement** : documentation remédiable, traçable, auditable
+- **Finalité** : produire des livrables compréhensibles, même pour un public non technique
 
 ---
 
@@ -45,8 +46,8 @@ Réaliser un **audit technique de sécurité** sur un site WordPress à l’aide
 | `OWASP ZAP`            | Scan de vulnérabilités automatisé                 | [🔗](https://www.zaproxy.org/) |
 | `Mozilla Observatory`  | Analyse des entêtes HTTP                         | [🔗](https://observatory.mozilla.org/) |
 | `Security Headers`     | Vérification des headers de sécurité              | [🔗](https://securityheaders.com/) |
-| `WordPress`            | Plateforme cible de l’audit                       | [🔗](https://wordpress.org/) |
-| `Markdown`             | Documentation et reporting                       | —    |
+| `WordPress`            | Plateforme cible de l’audit                       | [🔗](https://wordpress.com/) |
+| `Markdown`             | Documentation et synthèse structurée             | —    |
 
 ---
 
@@ -54,34 +55,43 @@ Réaliser un **audit technique de sécurité** sur un site WordPress à l’aide
 
 | Type                      | Lien                                                                 |
 |---------------------------|----------------------------------------------------------------------|
-| 🔍 Résultats détaillés     | [`security-summary.md`](./exports/security-summary.md)               |
+| 📄 Synthèse complète       | [`security-summary.md`](./exports/security-summary.md)               |
 | 📋 Checklist sécurité     | [`checklist-securite.md`](./checklist-securite.md)                   |
 | 🖼️ Captures visuelles     | [`/screenshots/`](./screenshots/)                                    |
-| 🌐 Synthèse en ligne      | [cybersecurite50.wordpress.com](https://cybersecurite50.wordpress.com) |
+| 🌐 Version en ligne       | [cybersecurite50.wordpress.com](https://cybersecurite50.wordpress.com) |
 | 📁 Données brutes         | [`exports/`](./exports/)                                             |
+
+---
+
+## 🧪 Résultats clés
+
+| Indicateur                          | Valeur / Information                                       |
+|------------------------------------|-------------------------------------------------------------|
+| Nombre total d’alertes critiques   | 1 critique + 2 moyennes + 1 faible (via OWASP ZAP)          |
+| Headers manquants                  | CSP, HSTS, X-Frame-Options (via Mozilla Observatory)        |
+| Score Mozilla Observatory initial  | F / 100                                                     |
+| Score Security Headers             | D                                                           |
+| Remédiations proposées             | HTTPS forcé, ajout entêtes via plugins                      |
+
+---
+
+## ✅ Plan d'action priorisé (niveau débutant)
+
+| Priorité | Action                                                    | Outil / plugin             |
+|----------|-----------------------------------------------------------|----------------------------|
+| 🔴 Critique | Forcer HTTPS et supprimer le contenu mixte               | Plugin Really Simple SSL   |
+| 🟠 Moyen    | Ajouter CSP, HSTS, X-Frame-Options                       | Plugin HTTP Headers        |
+| 🟡 Faible   | Ajouter une politique de cache et X-XSS-Protection       | Plugin WP Cerber           |
 
 ---
 
 ## 📌 Méthodologie
 
-1. **Scan initial** du site WordPress via OWASP ZAP & SecurityHeaders
-2. **Analyse manuelle** des résultats (headers HTTP, cookies, redirections)
-3. **Production de livrables** synthétiques pour les décideurs
-4. **Structuration GRC** avec recommandations remédiables
-5. **Documentation & versioning GitHub**
-
-![Méthodologie](./screenshots/securityheaders-result.png)
-
----
-
-## 📊 Résultats & Synthèse
-
-- 🔒 Vulnérabilités critiques détectées : `3`
-- 🛡️ Headers manquants : `Strict-Transport-Security`, `Content-Security-Policy`, etc.
-- 🧠 Recommandations clés : passage en HTTPS forcé, durcissement des cookies, mise à jour des plugins
-- ✅ Score Mozilla Observatory initial : `F` → objectif `B+` après remédiation
-
-Consultez la **[synthèse de sécurité complète](./exports/security-summary.md)**.
+1. Scan initial via OWASP ZAP, Security Headers et Mozilla Observatory
+2. Lecture des entêtes HTTP et analyse des cookies & protocoles
+3. Synthèse Markdown + visuels & export .csv des résultats
+4. Plan d’action basé sur criticité OWASP + conformité GRC (RGPD/NIS2)
+5. Structuration GitHub et documentation versionée
 
 ---
 
@@ -98,23 +108,25 @@ Consultez la **[synthèse de sécurité complète](./exports/security-summary.md
 
 ## 🚀 Projection IA / automatisation
 
-Prochaine étape : intégrer un pipeline CI/CD avec audit automatique des URLs WordPress via OWASP ZAP API + reporting auto (Markdown ou Notion).
+- Intégration d’un pipeline CI/CD + scans réguliers avec ZAP
+- Génération automatique de rapports Markdown ou Notion
+- Suivi de conformité RGPD/NIS2/DORA
 
 ---
 
 ## 🎯 Cas d’usage
 
-- **RSSI / Décideurs sécurité** : rapport synthétique pour plan d’action
-- **Chefs de projet** : intégration sécurité by design
-- **Consultants conformité** : support d’évaluation RGPD / NIS2 / DORA
+- **RSSI / DSI / Décideurs sécurité** : audit initial + plan d’action rapide
+- **Chefs de projet** : intégration sécurité dès la phase de design
+- **Consultants conformité** : démonstration RGPD-ready & support client
 
 ---
 
 ## 👥 Public cible
 
-- RSSI / DSI / DPO/ Responsable conformité
-- PMO / Chef de projet IT
-- Écoles & étudiants en cybersécurité ou GRC
+- RSSI / DSI / PMO / Responsable conformité
+- Étudiants & formateurs en cybersécurité ou GRC
+- Équipes projets web / DevOps
 
 ---
 
@@ -122,7 +134,6 @@ Prochaine étape : intégrer un pipeline CI/CD avec audit automatique des URLs W
 
 ```
 04-audit-securite-wordpress/
-│
 ├── README.md
 ├── checklist-securite.md
 ├── demo.md
@@ -135,8 +146,8 @@ Prochaine étape : intégrer un pipeline CI/CD avec audit automatique des URLs W
 │   └── ...
 │
 ├── screenshots/
-    ├── observatory-result.png
-    └── ...
+│   ├── observatory-result.png
+│   └── ...
 ```
 
 ---
@@ -148,4 +159,4 @@ Prochaine étape : intégrer un pipeline CI/CD avec audit automatique des URLs W
 📅 [Réserver un appel stratégique](https://calendly.com/eddy-azebaze-proton/30min)  
 🔗 [LinkedIn](https://www.linkedin.com/in/eddy-azebaze-034a20226)
 
-> **🧠 “On ne livre pas un projet. On construit un actif stratégique : durable, traçable, auditable.”**
+> 🧠 “On ne livre pas un projet. On construit un actif stratégique : durable, traçable, auditable.”
