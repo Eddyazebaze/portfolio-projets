@@ -1,101 +1,151 @@
 # 🔒 Audit Sécurité WordPress | OWASP • GRC • CISM
 
-![Statut](https://img.shields.io/badge/statut-finalisé-brightgreen) [🔗 Site Web](https://cybersecurite50.wordpress.com)
+![Statut](https://img.shields.io/badge/statut-finalisé-brightgreen)
+![Score Initial](https://img.shields.io/badge/Score_Mozilla-F-red)
+![Objectif](https://img.shields.io/badge/Objectif-B%2B-blue)
 
-Réaliser un audit de sécurité d’un site WordPress public en utilisant des outils professionnels reconnus, dans une logique démonstrative et pédagogique.
+> Ce projet met en œuvre un audit de sécurité complet d’un site WordPress, en mobilisant les bonnes pratiques OWASP, des outils de scan reconnus, une approche GRC, et une restitution exploitable pour RSSI, PMO ou décideur IT.
 
 ---
 
 ## 📌 Contexte stratégique
 
-**WordPress est le CMS le plus utilisé au monde**, donc également le plus ciblé par les attaques.  
+**WordPress est le CMS le plus utilisé au monde**, donc également le plus ciblé par les attaques.
+
 Ce projet vise à démontrer :
 
-- **La capacité à configurer un site de test** WordPress.  
-- **La conduite d’un audit de sécurité** via des outils professionnels open-source.  
+- **La capacité à configurer un site de test** WordPress.
+- **La conduite d’un audit de sécurité** via des outils professionnels open-source.
 - **La synthèse claire et actionnable** des résultats pour des décideurs ou équipes projets.
 
 ---
 
-## 🧠 Technologies / Outils
+## 🎯 Objectif
 
-- [WordPress](https://wordpress.com/) (hébergement via wordpress.com)  
-- [OWASP ZAP](https://www.zaproxy.org/) – scan de vulnérabilités  
-- [Mozilla HTTP Observatory](https://observatory.mozilla.org/)  
-- [SecurityHeaders.com](https://securityheaders.com/)
+Réaliser un **audit technique de sécurité** sur un site WordPress à l’aide d’outils open source, afin de :
+
+- Identifier les failles critiques (OWASP, HTTP headers, etc.)
+- Proposer des **recommandations concrètes et applicables**
+- Produire un livrable documenté pour renforcer la gouvernance sécurité (CISM-ready)
+
+---
+
+## 🧱 Cadre d'analyse GRC
+
+- **Normes & conformité** : RGPD, NIS2, ISO 27001
+- **Stack analysée** : CMS WordPress en production
+- **Approche orientée décideur** : priorisation des risques + remédiations exploitables
+
+---
+
+## 🛠️ Technologies & outils utilisés
+
+| Outil                  | Utilisation principale                            | Lien |
+|------------------------|---------------------------------------------------|------|
+| `OWASP ZAP`            | Scan de vulnérabilités automatisé                 | [🔗](https://www.zaproxy.org/) |
+| `Mozilla Observatory`  | Analyse des entêtes HTTP                         | [🔗](https://observatory.mozilla.org/) |
+| `Security Headers`     | Vérification des headers de sécurité              | [🔗](https://securityheaders.com/) |
+| `WordPress`            | Plateforme cible de l’audit                       | [🔗](https://wordpress.org/) |
+| `Markdown`             | Documentation et reporting                       | —    |
 
 ---
 
 ## 📦 Livrables
 
-- Site WordPress configuré et accessible publiquement :  
-  👉 [https://cybersecurite50.wordpress.com](https://cybersecurite50.wordpress.com)  
-- Captures du scan OWASP ZAP et des tests tiers  
-- Fichier [`security-summary.md`](./security-summary.md) avec synthèse des vulnérabilités  
-- Rapport PDF des outils externes + export CSV ZAP (`/exports`)  
-- Documentation GitHub complète avec démonstration, visualisations, et iframe intégré
+| Type                      | Lien                                                                 |
+|---------------------------|----------------------------------------------------------------------|
+| 🔍 Résultats détaillés     | [`security-summary.md`](./exports/security-summary.md)               |
+| 📋 Checklist sécurité     | [`checklist-securite.md`](./checklist-securite.md)                   |
+| 🖼️ Captures visuelles     | [`/screenshots/`](./screenshots/)                                    |
+| 🌐 Synthèse en ligne      | [cybersecurite50.wordpress.com](https://cybersecurite50.wordpress.com) |
+| 📁 Données brutes         | [`exports/`](./exports/)                                             |
 
 ---
 
-## 🧭 Approche chef de projet
+## 📌 Méthodologie
 
-1. **Préparation du site** : installation WordPress, configuration minimale, mise en ligne  
-2. **Scan automatique** avec 3 outils complémentaires (ZAP, Observatory, Headers)  
-3. **Analyse croisée** des résultats et identification des correctifs à haute priorité  
-4. **Structuration GitHub** pour un rendu clair, pro et pédagogique
+1. **Scan initial** du site WordPress via OWASP ZAP & SecurityHeaders
+2. **Analyse manuelle** des résultats (headers HTTP, cookies, redirections)
+3. **Production de livrables** synthétiques pour les décideurs
+4. **Structuration GRC** avec recommandations remédiables
+5. **Documentation & versioning GitHub**
 
----
-
-## 🔍 Insights clés
-
-- Les en-têtes de sécurité sont absentes ou faibles (ex. absence de `X-Frame-Options`, `Content-Security-Policy`, etc.)  
-- OWASP ZAP révèle de nombreuses erreurs 403/404 sur des chemins plugin/wp-content  
-- Scores faibles sur Mozilla Observatory et SecurityHeaders.com (notes F à C)  
-- Actions correctives simples à fort ROI : en-têtes HTTP, configuration .htaccess, désactivation plugins inutiles, séparation comptes admin
+![Méthodologie](./screenshots/securityheaders-result.png)
 
 ---
 
-## 🤖 Projection IA & extensions possibles
+## 📊 Résultats & Synthèse
 
-- Intégration automatique avec GitHub Actions pour scanner tout nouveau site pushé  
-- Rapport enrichi avec scoring OWASP Top 10  
-- Démonstrateur d’audit live pour formations ou ateliers
+- 🔒 Vulnérabilités critiques détectées : `3`
+- 🛡️ Headers manquants : `Strict-Transport-Security`, `Content-Security-Policy`, etc.
+- 🧠 Recommandations clés : passage en HTTPS forcé, durcissement des cookies, mise à jour des plugins
+- ✅ Score Mozilla Observatory initial : `F` → objectif `B+` après remédiation
+
+Consultez la **[synthèse de sécurité complète](./exports/security-summary.md)**.
+
+---
+
+## 🧠 Insights Clés
+
+| Insight                            | Détail                                                                |
+|------------------------------------|-----------------------------------------------------------------------|
+| 🚨 Sécurité HTTP                   | Headers critiques absents ou mal configurés                          |
+| 🔐 Cookies                         | Non marqués `HttpOnly`, `Secure` ou `SameSite`                       |
+| 🧱 OWASP ZAP                       | Vulnérabilités exposant des infos sur le serveur                     |
+| 🧭 GRC                             | Documentation formalisée pour RSSI / conformité                      |
+
+---
+
+## 🚀 Projection IA / automatisation
+
+Prochaine étape : intégrer un pipeline CI/CD avec audit automatique des URLs WordPress via OWASP ZAP API + reporting auto (Markdown ou Notion).
 
 ---
 
 ## 🎯 Cas d’usage
 
-- Démonstration de compétences **CISM / GRC / Audit sécurité**  
-- Support d’atelier ou bootcamp cybersécurité niveau débutant  
-- Outil de **sensibilisation pour décideurs non-tech**
+- **RSSI / Décideurs sécurité** : rapport synthétique pour plan d’action
+- **Chefs de projet** : intégration sécurité by design
+- **Consultants conformité** : support d’évaluation RGPD / NIS2 / DORA
 
 ---
 
-## 🧑‍💼 Public cible
+## 👥 Public cible
 
-- **DSI**, **RSSI**, **équipes GRC**, **PMO, développeurs, experts en cybersécurité**
+- RSSI / DSI / DPO/ Responsable conformité
+- PMO / Chef de projet IT
+- Écoles & étudiants en cybersécurité ou GRC
 
 ---
 
-## 📂 Arborescence simplifiée
+## 📂 Arborescence du projet
 
 ```
 04-audit-securite-wordpress/
 │
 ├── README.md
+├── checklist-securite.md
 ├── demo.md
 ├── iframe.md
-├── checklist-securite.md
-├── security-summary.md
 ├── resources-outils-cyber.md
+│
 ├── exports/
+│   ├── security-summary.md
 │   ├── Automated Scan_Zap.csv
-│   ├── HTTP Observatory Report.pdf
-│   └── Security Headers Report.pdf
+│   └── ...
+│
 ├── screenshots/
-│   └── *.png
+    ├── observatory-result.png
+    └── ...
 ```
 
 ---
 
-📣 **Maintenu par Eddy AZEBAZE** - Projet démonstratif à but pédagogique dans le cadre d’une démarche cybersécurité orientée GRC & projets no-code.
+## 📬 Contact
+
+👤 **Eddy AZEBAZE**  
+📧 [eddy.azebaze@proton.me](mailto:eddy.azebaze@proton.me?subject=Audit%20WP&body=Bonjour%20Eddy%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20votre%20audit%20WordPress...)  
+📅 [Réserver un appel stratégique](https://calendly.com/eddy-azebaze-proton/30min)  
+🔗 [LinkedIn](https://www.linkedin.com/in/eddy-azebaze-034a20226)
+
+> **🧠 “On ne livre pas un projet. On construit un actif stratégique : durable, traçable, auditable.”**
