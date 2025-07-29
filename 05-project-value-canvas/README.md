@@ -51,6 +51,15 @@ Ce **canvas** agit comme un **outil d’aide à la décision** pour reconnecter 
 
 ---
 
+### 📸 Aperçu du Canvas
+
+![Aperçu Canvas](./screenshots/apercu-canvas.png)
+
+> Ce visuel montre l’exemple “Lancement plateforme AI GRC Coach” analysé via le Project Value Canvas (score global élevé).  
+> Il permet de visualiser la valeur Business, Réglementaire, Utilisateur, Stratégique et Opérationnelle.
+
+---
+
 ## 🔮 Projection 2024–2026 (Bonus)
 - ✨ Ajout d’une **IA copilote** pour adapter le canvas selon la typologie de projet
 - 📈 Intégration dans des modules de formation (PMP®, GRC, AI Readiness)
@@ -88,7 +97,7 @@ Ce **canvas** agit comme un **outil d’aide à la décision** pour reconnecter 
 ---
 
 ## 📢 Contact
-👤 [Eddy Azebaze](https://www.linkedin.com/in/eddy-azebaze-034a20226)
+👤 [Eddy AZEBAZE](https://www.linkedin.com/in/eddy-azebaze-034a20226)
 📅 [Réserver un appel de cadrage](https://calendly.com/eddy-azebaze-proton/30min)
 
 ---
