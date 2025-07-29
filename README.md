@@ -1,73 +1,75 @@
-# 📁 Portfolio de projets - Eddy AZEBAZE
+# 📂 Portfolio de projets stratégiques – Eddy AZEBAZE
 
-Bienvenue dans mon espace de démonstration.  
-Je conçois et documente des projets utiles pour illustrer mes expertises sur le terrain, à la croisée de :
-
-- ✅ Gestion de projet (PMP®, SDLC, stratégie IT)
-- ✅ Gouvernance, Risques & Conformité (GRC)
-- ✅ Cybersécurité & audit IT
-- ✅ Stratégie data & IA responsable
+🎯 Démonstrateurs GRC • IA • Data • Cybersécurité  
+📍 France | 🔗 [LinkedIn](https://www.linkedin.com/in/eddy-azebaze-034a20226) | 📬 [Réserver un appel](https://calendly.com/eddy-azebaze-proton/30min)
 
 ---
 
-## 🎯 Objectif de ce dépôt
+## 🧭 Objectif du dépôt
 
-Présenter des projets démonstrateurs **concrets, stratégiques et pédagogiques**, sans bullshit, en mode MVP + documentation.  
-Chaque projet suit un format clair :
+Ce dépôt GitHub regroupe une série de projets **démonstrateurs** conçus pour illustrer mon approche de **chef de projet IT augmenté**, capable de livrer des outils concrets, documentés, alignés sur les enjeux de **valeur métier, conformité, IA responsable et stratégie SI**.
 
-- **Objectif / Contexte**
-- **Méthode / Outils**
-- **Résultat / Capture**
-- **Lien / Source**
+🎯 Chaque projet répond à des cas d’usage réels, avec une documentation soignée, des livrables activables, et un lien vers une démo ou un livrable final.
 
 ---
 
-## 🔍 Projets inclus
+## 🗂️ Sommaire des projets
 
-Ces projets sont concrets, documentés et déployés – ils reflètent ma capacité à penser et livrer des outils à impact pour les DSI, PMO, RSSI et directions métiers.
-
-| Projet                             | Description                                                          | Lien                                                   |
-|------------------------------------|----------------------------------------------------------------------|---------------------------------------------------------|
-| **Assistant Virtuel Eddy AZEBAZE** | Chatbot IA : PMP®, IA, GRC, stratégie IT                             | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/01-chatbot-assistant-eddy) · [Démo](https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/27/01/20250727010732-RSM5BWL1.json) |
-| **Analyse Dépenses Santé – BI**    | Tableaux de bord stratégiques sur les dépenses santé                 | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/06-analytics-sante-bi) · [Reporting](https://app.powerbi.com/links/...) |
-| **Audit Sécurité WordPress**       | Audit technique OWASP + recommandations concrètes                    | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/04-audit-securite-wordpress) · [Synthèse](https://cybersecurite50.wordpress.com) |
-| **Project Value Canvas**           | Canvas stratégique de cadrage de la valeur projet                    | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/05-project-value-canvas) · [Démo](https://project-value-canvas.vercel.app/) |
-| **AI Act Readiness Scorecard**     | Score d’auto-évaluation IA + plan d'action réglementaire             | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/02-ai-act-readiness-scorecard) · [Scorecard](https://ai-act-score.vercel.app) |
-| **AI Conformity Alert Flow**       | Système d'alerte automatisée pour risques IA (Make.com)              | [GitHub](https://github.com/Eddyazebaze/portfolio-projets/tree/main/03-ai-conformity-alert-flow) |
+| Projet                           | Description synthétique                                      | GitHub / Démo / Livrable                                |
+|----------------------------------|--------------------------------------------------------------|----------------------------------------------------------|
+| **01 – Assistant Virtuel IA**    | Chatbot IA GRC / PMP® / stratégie IT – sans backend          | [Repo](./01-chatbot-assistant-eddy) · [Démo](https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/27/01/20250727010732-RSM5BWL1.json) |
+| **02 – AI Act Readiness Scorecard** | Score d’auto-évaluation conformité IA (AI Act)              | [Repo](./02-ai-act-readiness-scorecard) · [Scorecard](https://ai-act-score.vercel.app) |
+| **03 – AI Conformity Alert Flow** | Alerte réglementaire automatisée (Make.com)                 | [Repo](./03-ai-conformity-alert-flow) · [PDF](./03-ai-conformity-alert-flow/livrable-alert-flow.md) |
+| **04 – Audit Sécurité WordPress**| Audit OWASP ZAP d’un site WordPress                          | [Repo](./04-audit-securite-wordpress) · [Synthèse](./04-audit-securite-wordpress/exports/security-summary.md) |
+| **05 – Project Value Canvas**    | Canvas visuel pour cadrer la valeur projet                  | [Repo](./05-project-value-canvas) · [Démo](https://project-value-canvas.vercel.app/) |
+| **06 – Analyse Dépenses Santé – BI** | Tableaux de bord stratégiques santé (Power BI)              | [Repo](./06-analytics-sante-bi) · [Reporting](./06-analytics-sante-bi/reporting) |
 
 ---
 
-## 🧩 Public ciblé
+## 🚀 Finalité des projets
 
-- DSI, PMO, RSSI, CDO
-- Responsables conformité IA / RGPD
-- Formateurs, écoles & partenaires innovation
-- Clients potentiels en conseil ou formation
+Ces projets illustrent :
 
----
-
-## 🗂️ Structure du dépôt
-
-```bash
-portfolio-projets/
-├── 01-chatbot-assistant-eddy/        # Chatbot Botpress IA x PMP x GRC x Data
-├── 02-ai-act-readiness-scorecard/    # Scorecard d’évaluation AI Act
-├── 03-ai-conformity-alert-flow/      # Automatisation alertes conformité IA
-├── 04-audit-securite-wordpress/      # Audit IT WP avec checklist
-├── 05-project-value-canvas/          # Visualisation de la valeur projet
-├── 06-analytics-sante-bi/            # Dashboard santé & analyse dépenses
-└── README.md                         # Présentation générale
-```
+- Une **posture de pilotage** stratégique (pas seulement de l'exécution)
+- Une capacité à **livrer des outils concrets** utilisés dans des contextes réglementaires, IT et IA
+- Une maîtrise des **enjeux de conformité**, de valeur métier, et de **vulgarisation pour les non-tech**
+- Un usage raisonné des **outils no-code / low-code / code** selon les besoins
+- Une logique de **capitalisation** : chaque livrable peut être réutilisé ou adapté
 
 ---
 
-## 📬 Contact
+## 🧩 Méthodologie projet (commune à tous les projets)
 
-**Eddy AZEBAZE**  
+| Phase              | Objectif                                    | Livrables typiques                     |
+|--------------------|---------------------------------------------|----------------------------------------|
+| **1. Diagnostic**  | Comprendre les enjeux, risques, conformité  | Audit, cartographie, benchmark         |
+| **2. Cadrage**     | Définir la valeur cible                     | Canvas, roadmap, backlog, prompts      |
+| **3. Delivery**    | Déploiement avec outils adaptés             | Démo, automation, scoring, dashboards  |
+| **4. Suivi & Impact** | Mesurer, documenter, capitaliser         | Synthèses, scorecards, exports GitHub  |
+
+---
+
+## 🛠️ Technologies & outils mobilisés
+
+- **Visualisation & Data** : Power BI, Python, Pandas, CSV structuré
+- **Automatisation & alerting** : Make.com, Zapier, Markdown + PDF
+- **Audit sécurité** : OWASP ZAP, Mozilla Observatory
+- **Intégration & déploiement** : GitHub, Vercel, Botpress, Notion
+- **Design & cadrage** : Miro, Canva, Value Canvas personnalisé
+- **Structuration & documentation** : README, markdown, screenshots, canvas
+
+---
+
+## 🔗 Contact
+
+📅 **Un projet, une idée à concrétiser ?** Réservons un échange :  
+👉 [Prendre rendez-vous (30 min)](https://calendly.com/eddy-azebaze-proton/30min)
+
 📧 eddy.azebaze@proton.me  
-🔗 [linkedin.com/in/eddy-azebaze-034a20226](https://www.linkedin.com/in/eddy-azebaze-034a20226)  
-🛠️ Formateur certifié PMP® (PMI ATP) | Expert IA, GRC, Cyber & IT Strategy | Votre Co-pilote pour garantir la réussite de vos projets IT à fort enjeu  
+🔗 [LinkedIn – Profil complet](https://www.linkedin.com/in/eddy-azebaze-034a20226)
 
-> “On ne livre pas un projet. On construit un actif stratégique : durable, traçable et auditable.”  
-> **Eddy AZEBAZE**
+---
+
+> "Un bon projet n’est pas un livrable.  
+> C’est un levier stratégique, traçable et réutilisable."
 
