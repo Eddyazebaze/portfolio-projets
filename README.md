@@ -28,7 +28,7 @@ Chaque projet suit un format clair :
 |----------|----------------|------------------|--------|
 | **AI Act Readiness Scorecard** | Score de conformité réglementaire IA (auto-évaluation rapide) | HTML, JS, Vercel | À venir |
 | **AI Conformity Alert Flow** | Automatisation des alertes IA via Make | Make, Notion, Email | À venir |
-| **Project Value Canvas** | Canvas visuel pour identifier la valeur projet (Business, Regulatory, etc.) | Miro / HTML | [voir le dossier](https://github.com/Eddyazebaze/portfolio-projets/tree/main/04-project-value-canvas) |
+| **Project Value Canvas** | Canvas visuel pour identifier la valeur projet (Business, Regulatory, etc.) | Emergent.sh / HTML | [voir le dossier](https://github.com/Eddyazebaze/portfolio-projets/tree/main/05-project-value-canvas) |
 | **Audit sécurité WordPress** | Check-up de sécurité + recommandations concrètes | WPScan, GitHub | [voir le dossier](https://github.com/Eddyazebaze/portfolio-projets/tree/main/04-audit-securite-wordpress) |
 | **Analyse dépenses santé – BI** | Tableaux de bord santé + analyse insights personnels | Excel, Power BI | [ Voir le projet](./06-analytics-sante-bi/) |
 |**Assistant Virtuel Eddy AZEBAZE** | Chatbot pro (Botpress) : IA, GRC, Data & Insights, PMP®, IT Strategy | Botpress (no-code) | [voir le dossier](./01-chatbot-assistant-eddy) |
@@ -51,8 +51,8 @@ portfolio-projets/
 ├── 01-chatbot-assistant-eddy/        # Chatbot Botpress IA x PMP x GRC x Data
 ├── 02-ai-act-readiness-scorecard/    # Scorecard d’évaluation AI Act
 ├── 03-ai-conformity-alert-flow/      # Automatisation alertes conformité IA
-├── 04-project-value-canvas/          # Visualisation de la valeur projet
-├── 05-audit-securite-wordpress/      # Audit IT WP avec checklist
+├── 04-audit-securite-wordpress/      # Audit IT WP avec checklist
+├── 05-project-value-canvas/          # Visualisation de la valeur projet
 ├── 06-analytics-sante-bi/            # Dashboard santé & analyse dépenses
 └── README.md                         # Présentation générale
 ```
