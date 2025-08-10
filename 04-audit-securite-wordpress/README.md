@@ -7,7 +7,7 @@
 
 ## 📌 Objectif du projet
 Ce projet présente un audit de sécurité complet réalisé sur un site WordPress de démonstration.  
-L’approche suit la méthode **GRC** (Gouvernance, Risques, Conformité) et les bonnes pratiques **OWASP**, avec une restitution claire et actionnable pour décideurs et équipes techniques.
+L’approche suit la méthodologie **GRC** (Gouvernance, Risques, Conformité) et les bonnes pratiques **OWASP**, avec une restitution claire et actionnable pour décideurs et équipes techniques.
 
 ---
 
@@ -116,7 +116,7 @@ Effectuer un audit technique et stratégique de sécurité sur un site WordPress
 
 > *« Grâce à cet audit, nous avons identifié et corrigé des failles critiques avant le lancement.  
 > La méthodologie GRC appliquée nous donne une vision claire des priorités et un plan d’action concret. »*  
-> — **RSSI fictif - Projet de démonstration**
+> **RSSI fictif - Projet de démonstration**
 
 ---
 
