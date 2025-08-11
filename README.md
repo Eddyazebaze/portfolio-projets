@@ -61,7 +61,7 @@ Ces projets illustrent :
 | **Structuration & Documentation** | README · Markdown · Screenshots | Documentation portfolio et projets |
 | **AI Agent Framework** | Botpress | Assistant virtuel GRC • IA • Data • Cybersécurité • PMP® |
 | **No-code / Low-code Apps** | Emergent.sh · Airtable | Scorecards IA Act, Value Canvas, gestion des données |
-| **IA Générative & Prompt Engineering** | Claude AI · Qwen AI · Gwen AI | Rédaction, prototypage et génération de contenu |
+| **IA Générative & Prompt Engineering** | Claude AI · Qwen AI | Rédaction, prototypage et génération de contenu |
 | **Context Engineering** | Méthode avancée d’optimisation de prompts multi-IA | Amélioration de la pertinence et du ROI des agents IA |
 
 ---
