@@ -56,10 +56,10 @@ Ces projets illustrent :
 | **Visualisation & Data** | Power BI · Python · Pandas · Google Sheets · CSV structuré | Tableaux de bord santé (OMS), KPIs IA Act |
 | **Automatisation & Alerting** | Make.com · Zapier · Slack · Markdown + PDF | Alertes conformité IA en temps réel |
 | **Audit Sécurité** | OWASP ZAP · Mozilla Observatory | Analyse vulnérabilités site WordPress |
-| **Intégration & Déploiement** | GitHub · Vercel · Notion | Déploiement démonstrateurs IA/GRC |
+| **Intégration & Déploiement** | GitHub · Vercel · Notion | Déploiement démonstrateurs GRC • IA • Data • Cybersécurité |
 | **Design & Cadrage** | Miro · Canva · Value Canvas personnalisé | Ateliers de cadrage valeur projet |
 | **Structuration & Documentation** | README · Markdown · Screenshots | Documentation portfolio et projets |
-| **AI Agent Framework** | Botpress | Assistant virtuel IA GRC/PMP® |
+| **AI Agent Framework** | Botpress | Assistant virtuel GRC • IA • Data • Cybersécurité • PMP® |
 | **No-code / Low-code Apps** | Emergent.sh · Airtable | Scorecards IA Act, Value Canvas, gestion des données |
 | **IA Générative & Prompt Engineering** | Claude AI · Qwen AI · Gwen AI | Rédaction, prototypage et génération de contenu |
 | **Context Engineering** | Méthode avancée d’optimisation de prompts multi-IA | Amélioration de la pertinence et du ROI des agents IA |
@@ -70,7 +70,6 @@ Ces projets illustrent :
 
 📅 **Un projet, une idée à concrétiser ?** Réservons un échange :  
 👉 [Prendre rendez-vous (30 min)](https://calendly.com/eddy-azebaze-proton/30min)
-
 📧 eddy.azebaze@proton.me  
 🔗 [LinkedIn – Profil complet](https://www.linkedin.com/in/eddy-azebaze-034a20226)
 
