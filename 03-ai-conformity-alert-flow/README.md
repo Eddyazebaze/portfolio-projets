@@ -43,13 +43,13 @@ Cette automatisation permet :
 ---
 
 ## 🔗 Intégrations stratégiques
-### 1. ITSM – *ServiceNow, Jira Service Management, Freshservice…*
+### 1. ITSM - *ServiceNow, Jira Service Management, Freshservice…*
 - Cas d’usage : signalement d’incidents, ouverture automatique de tickets, escalade.
 
-### 2. GRC – *Archer, Aravo, OneTrust…*
+### 2. GRC - *Archer, Aravo, OneTrust…*
 - Cas d’usage : notification de non-conformités, suivi d’audits, alertes réglementaires.
 
-### 3. SIEM/SOC – *Splunk, Microsoft Sentinel, IBM QRadar…*
+### 3. SIEM/SOC - *Splunk, Microsoft Sentinel, IBM QRadar…*
 - Cas d’usage : transmission d’alertes de cybersécurité, déclenchement de playbooks.
 
 ---
@@ -85,6 +85,7 @@ Cette automatisation permet :
 ## 👤 Auteur
 **Eddy AZEBAZE**  
 Chef de projet IT stratégique – Expert GRC • IA • Data & Insights • Cybersécurité
+
 📅 **Un projet à fort enjeu, un cadrage à lancer ?** Prenons 30 min ensemble : [Réserver un appel](https://calendly.com/eddy-azebaze-proton/30min)  
 [LinkedIn](https://www.linkedin.com/in/eddy-azebaze-034a20226/)
 
