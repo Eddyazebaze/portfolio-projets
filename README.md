@@ -1,4 +1,4 @@
-# 📂 Portfolio de projets stratégiques – Eddy AZEBAZE
+# 📂 Portfolio de projets stratégiques - Eddy AZEBAZE
 
 🎯 Démonstrateurs GRC • IA • Data • Cybersécurité  
 📍 France | 🔗 [LinkedIn](https://www.linkedin.com/in/eddy-azebaze-034a20226) | 📬 [Réserver un appel](https://calendly.com/eddy-azebaze-proton/30min)
@@ -17,12 +17,12 @@ Ce dépôt GitHub regroupe une série de projets **démonstrateurs** conçus pou
 
 | Projet                           | Description synthétique                                      | GitHub / Démo / Livrable                                |
 |----------------------------------|--------------------------------------------------------------|----------------------------------------------------------|
-| **01 – Assistant Virtuel IA**    | Chatbot IA GRC / PMP® / stratégie IT – sans backend          | [Repo](./01-chatbot-assistant-eddy) · [Démo](https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/27/01/20250727010732-RSM5BWL1.json) |
-| **02 – AI Act Readiness Scorecard** | Score d’auto-évaluation conformité IA (AI Act)              | [Repo](./02-ai-act-readiness-scorecard) · [Scorecard](https://ai-act-score.vercel.app) |
-| **03 – AI Conformity Alert Flow** | Alerte réglementaire automatisée (Make.com)                 | [Repo](./03-ai-conformity-alert-flow) · [PDF](./03-ai-conformity-alert-flow/livrable-alert-flow.md) |
-| **04 – Audit Sécurité WordPress**| Audit OWASP ZAP d’un site WordPress                          | [Repo](./04-audit-securite-wordpress) · [Synthèse](./04-audit-securite-wordpress/exports/security-summary.md) |
-| **05 – Project Value Canvas**    | Canvas visuel pour cadrer la valeur projet                  | [Repo](./05-project-value-canvas) · [Démo](https://project-value-canvas.vercel.app/) |
-| **06 – Analyse Dépenses Santé – BI** | Tableaux de bord stratégiques santé (Power BI)              | [Repo](./06-analytics-sante-bi) · [Reporting](./06-analytics-sante-bi/reporting) |
+| **01 - Assistant Virtuel IA**    | Chatbot IA GRC / PMP® / stratégie IT – sans backend          | [Repo](./01-chatbot-assistant-eddy) · [Démo](https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/27/01/20250727010732-RSM5BWL1.json) |
+| **02 - AI Act Readiness Scorecard** | Score d’auto-évaluation conformité IA (AI Act)              | [Repo](./02-ai-act-readiness-scorecard) · [Scorecard](https://ai-act-score.vercel.app) |
+| **03 - AI Conformity Alert Flow** | Alerte réglementaire automatisée (Make.com)                 | [Repo](./03-ai-conformity-alert-flow) · [Reporting](./03-ai-conformity-alert-flow/livrable-alert-flow.md) |
+| **04 - Audit Sécurité WordPress**| Audit OWASP ZAP d’un site WordPress                          | [Repo](./04-audit-securite-wordpress) · [Synthèse](./04-audit-securite-wordpress/exports/security-summary.md) |
+| **05 - Project Value Canvas**    | Canvas visuel pour cadrer la valeur projet                  | [Repo](./05-project-value-canvas) · [Démo](https://project-value-canvas.vercel.app/) |
+| **06 - Analyse Dépenses Santé - BI** | Tableaux de bord stratégiques santé (Power BI)              | [Repo](./06-analytics-sante-bi) · [Reporting](https://github.com/Eddyazebaze/portfolio-projets/blob/main/06-analytics-sante-bi/reporting/Depenses_Sante%20France_2012-2022_Ce%20que%20disent%20les%20donnees_OMS_Eddy%20AZEBAZE.pdf) |
 
 ---
 
@@ -49,14 +49,20 @@ Ces projets illustrent :
 
 ---
 
-## 🛠️ Technologies & outils mobilisés
+## 🛠️ Technologies & Outils Mobilisés
 
-- **Visualisation & Data** : Power BI, Python, Pandas, CSV structuré
-- **Automatisation & alerting** : Make.com, Zapier, Markdown + PDF
-- **Audit sécurité** : OWASP ZAP, Mozilla Observatory
-- **Intégration & déploiement** : GitHub, Vercel, Botpress, Notion
-- **Design & cadrage** : Miro, Canva, Value Canvas personnalisé
-- **Structuration & documentation** : README, markdown, screenshots, canvas
+| Domaine | Outils clés | Cas d’usage dans mes projets |
+|---------|------------|------------------------------|
+| **Visualisation & Data** | Power BI · Python · Pandas · Google Sheets · CSV structuré | Tableaux de bord santé (OMS), KPIs IA Act |
+| **Automatisation & Alerting** | Make.com · Zapier · Slack · Markdown + PDF | Alertes conformité IA en temps réel |
+| **Audit Sécurité** | OWASP ZAP · Mozilla Observatory | Analyse vulnérabilités site WordPress |
+| **Intégration & Déploiement** | GitHub · Vercel · Notion | Déploiement démonstrateurs IA/GRC |
+| **Design & Cadrage** | Miro · Canva · Value Canvas personnalisé | Ateliers de cadrage valeur projet |
+| **Structuration & Documentation** | README · Markdown · Screenshots | Documentation portfolio et projets |
+| **AI Agent Framework** | Botpress | Assistant virtuel IA GRC/PMP® |
+| **No-code / Low-code Apps** | Emergent.sh · Airtable | Scorecards IA Act, Value Canvas, gestion des données |
+| **IA Générative & Prompt Engineering** | Claude AI · Qwen AI · Gwen AI | Rédaction, prototypage et génération de contenu |
+| **Context Engineering** | Méthode avancée d’optimisation de prompts multi-IA | Amélioration de la pertinence et du ROI des agents IA |
 
 ---
 
