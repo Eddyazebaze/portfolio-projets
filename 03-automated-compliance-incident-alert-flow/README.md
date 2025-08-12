@@ -37,25 +37,37 @@ Cette première version V0 montre un flux simple et fonctionnel, avec des pistes
 
 ---
 
-## 3) Démo rapide (60 secondes)
+3) Démo rapide (60 secondes)
+
 1. Ouvrir **ReqBin** (ou Postman). Méthode **POST** → URL du **webhook Make**.  
 2. Body (**JSON**) :
-   ```json
-  {
-  "projectName": "MedAI Clinical Trial Optimizer",
-  "complianceStatus": "Evidence of Data Governance",
-  "regulation": "AI Act",
-  "priority": "Critical",
-  "message": "No evidence of dataset governance provided",
-  "source": "https://wiki/internal/ai-governance"
-}
 
-   ```
+    ```json
+    {
+      "projectName": "MedAI Clinical Trial Optimizer",
+      "complianceStatus": "Evidence of Data Governance",
+      "regulation": "AI Act",
+      "priority": "Critical",
+      "message": "No evidence of dataset governance provided",
+      "source": "https://wiki/internal/ai-governance"
+    }
+    ```
+
 3. **Send** → vérifier :  
    - Slack : message reçu dans le canal d’alerte.  
    - Google Sheets : nouvelle ligne ajoutée (horodatée).
 
 > 🎯 À montrer : capture Slack + capture de la ligne dans Sheets (preuve de fonctionnement).
+
+---
+
+**📸 Preuve de fonctionnement**  
+
+*Capture Slack :*  
+![Slack Alert](./screenshots/Slack_Snapshot.jpg)  
+
+*Capture Google Sheets :*  
+![Google Sheets Alert](./screenshots/Google%20Sheets_Snapshot.jpg)
 
 ---
 
@@ -192,7 +204,8 @@ Cette automatisation permet :
 ---
 
 ## 13) Arborescence recommandée
-```
+
+```text
 03-automated-compliance-incident-alert-flow/
 ├─ README.md
 ├─ /docs
@@ -206,7 +219,6 @@ Cette automatisation permet :
 │  └─ teams_adaptive_card.json
 └─ /scenarios
    └─ make-scenario.json   # (export Make ultérieurement)
-```
 
 ---
 
