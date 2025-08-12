@@ -227,10 +227,11 @@ Cette automatisation permet :
 Chef de projet IT stratégique – Expert GRC • IA • Data & Insights • Cybersécurité
 
 📅 **Un projet à fort enjeu, un cadrage à lancer ?** Prenons 30 min ensemble : [Réserver un appel](https://calendly.com/eddy-azebaze-proton/30min)  
+
 [LinkedIn](https://www.linkedin.com/in/eddy-azebaze-034a20226/)
 
 ---
 
-## 🏷️ Tags
+**🏷️ Tags**
 
 `Make.com` `Automation` `Compliance` `Incident Management` `ITSM` `GRC` `SIEM` `Slack` `Google Sheets` `Workflow Automation` `Business Process` `Alerts` `Risk Management` `Regulatory Compliance` `AI Act` `Incident Response`
