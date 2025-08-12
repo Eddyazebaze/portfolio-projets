@@ -1,0 +1,687 @@
+{
+    "name": "📢 Automated Compliance & Incident Alert Flow",
+    "flow": [
+        {
+            "id": 1,
+            "module": "gateway:CustomWebHook",
+            "version": 1,
+            "parameters": {
+                "hook": 2979004,
+                "maxResults": 1
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": 0,
+                    "y": 0
+                },
+                "restore": {
+                    "parameters": {
+                        "hook": {
+                            "data": {
+                                "editable": "true"
+                            },
+                            "label": "AIComplianceAlerts"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "hook",
+                        "type": "hook:gateway-webhook",
+                        "label": "Webhook",
+                        "required": true
+                    },
+                    {
+                        "name": "maxResults",
+                        "type": "number",
+                        "label": "Maximum number of results"
+                    }
+                ],
+                "advanced": true
+            }
+        },
+        {
+            "id": 2,
+            "module": "google-sheets:addRow",
+            "version": 2,
+            "parameters": {
+                "__IMTCONN__": 10719854
+            },
+            "mapper": {
+                "mode": "map",
+                "values": {
+                    "0": "{{now}}",
+                    "1": "{{1.project_name}}",
+                    "2": "{{1.rule_name}}",
+                    "3": "{{1.regulation}}",
+                    "4": "{{1.severity}}",
+                    "5": "{{1.message}}",
+                    "6": "{{1.link}}"
+                },
+                "sheetId": "alerts",
+                "spreadsheetId": "1q1-_raNb-wBb32EFtsVK7bV6B4zQS4qGZdQhpIhHkeg",
+                "tableFirstRow": "A1:Z1",
+                "insertDataOption": "INSERT_ROWS",
+                "valueInputOption": "USER_ENTERED",
+                "insertUnformatted": false
+            },
+            "metadata": {
+                "designer": {
+                    "x": 300,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "mode": {
+                            "label": "Enter manually"
+                        },
+                        "values": {
+                            "nested": {
+                                "7": {
+                                    "collapsed": true
+                                },
+                                "8": {
+                                    "collapsed": true
+                                },
+                                "9": {
+                                    "collapsed": true
+                                },
+                                "10": {
+                                    "collapsed": true
+                                },
+                                "11": {
+                                    "collapsed": true
+                                },
+                                "12": {
+                                    "collapsed": true
+                                },
+                                "13": {
+                                    "collapsed": true
+                                },
+                                "14": {
+                                    "collapsed": true
+                                },
+                                "15": {
+                                    "collapsed": true
+                                },
+                                "16": {
+                                    "collapsed": true
+                                },
+                                "17": {
+                                    "collapsed": true
+                                },
+                                "18": {
+                                    "collapsed": true
+                                },
+                                "19": {
+                                    "collapsed": true
+                                },
+                                "20": {
+                                    "collapsed": true
+                                },
+                                "21": {
+                                    "collapsed": true
+                                },
+                                "22": {
+                                    "collapsed": true
+                                },
+                                "23": {
+                                    "collapsed": true
+                                },
+                                "24": {
+                                    "collapsed": true
+                                },
+                                "25": {
+                                    "collapsed": true
+                                }
+                            }
+                        },
+                        "tableFirstRow": {
+                            "label": "A-Z",
+                            "nested": [
+                                {
+                                    "name": "values",
+                                    "spec": [
+                                        {
+                                            "name": "0",
+                                            "type": "text",
+                                            "label": "A"
+                                        },
+                                        {
+                                            "name": "1",
+                                            "type": "text",
+                                            "label": "B"
+                                        },
+                                        {
+                                            "name": "2",
+                                            "type": "text",
+                                            "label": "C"
+                                        },
+                                        {
+                                            "name": "3",
+                                            "type": "text",
+                                            "label": "D"
+                                        },
+                                        {
+                                            "name": "4",
+                                            "type": "text",
+                                            "label": "E"
+                                        },
+                                        {
+                                            "name": "5",
+                                            "type": "text",
+                                            "label": "F"
+                                        },
+                                        {
+                                            "name": "6",
+                                            "type": "text",
+                                            "label": "G"
+                                        },
+                                        {
+                                            "name": "7",
+                                            "type": "text",
+                                            "label": "H"
+                                        },
+                                        {
+                                            "name": "8",
+                                            "type": "text",
+                                            "label": "I"
+                                        },
+                                        {
+                                            "name": "9",
+                                            "type": "text",
+                                            "label": "J"
+                                        },
+                                        {
+                                            "name": "10",
+                                            "type": "text",
+                                            "label": "K"
+                                        },
+                                        {
+                                            "name": "11",
+                                            "type": "text",
+                                            "label": "L"
+                                        },
+                                        {
+                                            "name": "12",
+                                            "type": "text",
+                                            "label": "M"
+                                        },
+                                        {
+                                            "name": "13",
+                                            "type": "text",
+                                            "label": "N"
+                                        },
+                                        {
+                                            "name": "14",
+                                            "type": "text",
+                                            "label": "O"
+                                        },
+                                        {
+                                            "name": "15",
+                                            "type": "text",
+                                            "label": "P"
+                                        },
+                                        {
+                                            "name": "16",
+                                            "type": "text",
+                                            "label": "Q"
+                                        },
+                                        {
+                                            "name": "17",
+                                            "type": "text",
+                                            "label": "R"
+                                        },
+                                        {
+                                            "name": "18",
+                                            "type": "text",
+                                            "label": "S"
+                                        },
+                                        {
+                                            "name": "19",
+                                            "type": "text",
+                                            "label": "T"
+                                        },
+                                        {
+                                            "name": "20",
+                                            "type": "text",
+                                            "label": "U"
+                                        },
+                                        {
+                                            "name": "21",
+                                            "type": "text",
+                                            "label": "V"
+                                        },
+                                        {
+                                            "name": "22",
+                                            "type": "text",
+                                            "label": "W"
+                                        },
+                                        {
+                                            "name": "23",
+                                            "type": "text",
+                                            "label": "X"
+                                        },
+                                        {
+                                            "name": "24",
+                                            "type": "text",
+                                            "label": "Y"
+                                        },
+                                        {
+                                            "name": "25",
+                                            "type": "text",
+                                            "label": "Z"
+                                        }
+                                    ],
+                                    "type": "collection",
+                                    "label": "Values"
+                                }
+                            ]
+                        },
+                        "insertDataOption": {
+                            "mode": "chose",
+                            "label": "Insert rows"
+                        },
+                        "valueInputOption": {
+                            "mode": "chose",
+                            "label": "User entered"
+                        },
+                        "insertUnformatted": {
+                            "mode": "chose"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "google"
+                            },
+                            "label": "GoogleSheetEddy (edazebz@gmail.com)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:google",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "mode",
+                        "type": "select",
+                        "label": "Search Method",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "select",
+                                "fromAll",
+                                "map"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "insertUnformatted",
+                        "type": "boolean",
+                        "label": "Unformatted",
+                        "required": true
+                    },
+                    {
+                        "name": "valueInputOption",
+                        "type": "select",
+                        "label": "Value input option",
+                        "validate": {
+                            "enum": [
+                                "USER_ENTERED",
+                                "RAW"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "insertDataOption",
+                        "type": "select",
+                        "label": "Insert data option",
+                        "validate": {
+                            "enum": [
+                                "INSERT_ROWS",
+                                "OVERWRITE"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "spreadsheetId",
+                        "type": "text",
+                        "label": "Spreadsheet ID",
+                        "required": true
+                    },
+                    {
+                        "name": "sheetId",
+                        "type": "text",
+                        "label": "Sheet Name",
+                        "required": true
+                    },
+                    {
+                        "name": "tableFirstRow",
+                        "type": "select",
+                        "label": "Column range",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "A1:Z1",
+                                "A1:BZ1",
+                                "A1:CZ1",
+                                "A1:DZ1",
+                                "A1:MZ1",
+                                "A1:ZZ1"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "values",
+                        "spec": [
+                            {
+                                "name": "0",
+                                "type": "text",
+                                "label": "A"
+                            },
+                            {
+                                "name": "1",
+                                "type": "text",
+                                "label": "B"
+                            },
+                            {
+                                "name": "2",
+                                "type": "text",
+                                "label": "C"
+                            },
+                            {
+                                "name": "3",
+                                "type": "text",
+                                "label": "D"
+                            },
+                            {
+                                "name": "4",
+                                "type": "text",
+                                "label": "E"
+                            },
+                            {
+                                "name": "5",
+                                "type": "text",
+                                "label": "F"
+                            },
+                            {
+                                "name": "6",
+                                "type": "text",
+                                "label": "G"
+                            },
+                            {
+                                "name": "7",
+                                "type": "text",
+                                "label": "H"
+                            },
+                            {
+                                "name": "8",
+                                "type": "text",
+                                "label": "I"
+                            },
+                            {
+                                "name": "9",
+                                "type": "text",
+                                "label": "J"
+                            },
+                            {
+                                "name": "10",
+                                "type": "text",
+                                "label": "K"
+                            },
+                            {
+                                "name": "11",
+                                "type": "text",
+                                "label": "L"
+                            },
+                            {
+                                "name": "12",
+                                "type": "text",
+                                "label": "M"
+                            },
+                            {
+                                "name": "13",
+                                "type": "text",
+                                "label": "N"
+                            },
+                            {
+                                "name": "14",
+                                "type": "text",
+                                "label": "O"
+                            },
+                            {
+                                "name": "15",
+                                "type": "text",
+                                "label": "P"
+                            },
+                            {
+                                "name": "16",
+                                "type": "text",
+                                "label": "Q"
+                            },
+                            {
+                                "name": "17",
+                                "type": "text",
+                                "label": "R"
+                            },
+                            {
+                                "name": "18",
+                                "type": "text",
+                                "label": "S"
+                            },
+                            {
+                                "name": "19",
+                                "type": "text",
+                                "label": "T"
+                            },
+                            {
+                                "name": "20",
+                                "type": "text",
+                                "label": "U"
+                            },
+                            {
+                                "name": "21",
+                                "type": "text",
+                                "label": "V"
+                            },
+                            {
+                                "name": "22",
+                                "type": "text",
+                                "label": "W"
+                            },
+                            {
+                                "name": "23",
+                                "type": "text",
+                                "label": "X"
+                            },
+                            {
+                                "name": "24",
+                                "type": "text",
+                                "label": "Y"
+                            },
+                            {
+                                "name": "25",
+                                "type": "text",
+                                "label": "Z"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Values"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "module": "slack:CreateMessage",
+            "version": 4,
+            "parameters": {
+                "__IMTCONN__": 10720873
+            },
+            "mapper": {
+                "text": "*Alerte Conformité*\n🚨 *Projet* : {{1.project_name}}\n📜 *Règle* : {{1.rule_name}}\n📑 *Régulation* : {{1.regulation}}\n⚠️ *Gravité* : {{1.severity}}\n📝*Message* : {{1.message}}\n🔗 *Lien* : {{1.link}}",
+                "parse": false,
+                "mrkdwn": true,
+                "channel": "#tous-eddy-project-hub\r\n​",
+                "channelWType": "manualy"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 600,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "parse": {
+                            "mode": "chose"
+                        },
+                        "mrkdwn": {
+                            "mode": "chose"
+                        },
+                        "link_names": {
+                            "mode": "chose"
+                        },
+                        "channelWType": {
+                            "label": "Enter manually"
+                        },
+                        "unfurl_links": {
+                            "mode": "chose"
+                        },
+                        "unfurl_media": {
+                            "mode": "chose"
+                        },
+                        "reply_broadcast": {
+                            "mode": "chose"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "slack2"
+                            },
+                            "label": "Slack Eddy Project Hub (eddyprojecthub.slack.com - eddy.azebaze)"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:slack2,slack3",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "channelWType",
+                        "type": "select",
+                        "label": "Enter a channel ID or name",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "manualy",
+                                "list"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "text",
+                        "type": "text",
+                        "label": "Text"
+                    },
+                    {
+                        "name": "blocks",
+                        "type": "text",
+                        "label": "Blocks"
+                    },
+                    {
+                        "name": "thread_ts",
+                        "type": "text",
+                        "label": "Thread message ID (time stamp)"
+                    },
+                    {
+                        "name": "reply_broadcast",
+                        "type": "boolean",
+                        "label": "Reply broadcast"
+                    },
+                    {
+                        "name": "link_names",
+                        "type": "boolean",
+                        "label": "Link names"
+                    },
+                    {
+                        "name": "parse",
+                        "type": "boolean",
+                        "label": "Parse message text"
+                    },
+                    {
+                        "name": "mrkdwn",
+                        "type": "boolean",
+                        "label": "Use markdown"
+                    },
+                    {
+                        "name": "unfurl_links",
+                        "type": "boolean",
+                        "label": "Unfurl primarily text-based content"
+                    },
+                    {
+                        "name": "unfurl_media",
+                        "type": "boolean",
+                        "label": "Unfurl media content"
+                    },
+                    {
+                        "name": "icon_emoji",
+                        "type": "text",
+                        "label": "Icon emoji"
+                    },
+                    {
+                        "name": "icon_url",
+                        "type": "url",
+                        "label": "Icon url"
+                    },
+                    {
+                        "name": "username",
+                        "type": "text",
+                        "label": "User name"
+                    },
+                    {
+                        "name": "channel",
+                        "type": "text",
+                        "label": "Channel ID or name",
+                        "required": true
+                    }
+                ]
+            }
+        }
+    ],
+    "metadata": {
+        "instant": true,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "eu2.make.com",
+        "notes": []
+    }
+}
