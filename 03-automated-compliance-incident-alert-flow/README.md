@@ -222,4 +222,3 @@ Chef de projet IT stratégique – Expert GRC • IA • Data & Insights • Cyb
 ## 🏷️ Tags
 
 `Make.com` `Automation` `Compliance` `Incident Management` `ITSM` `GRC` `SIEM` `Slack` `Google Sheets` `Workflow Automation` `Business Process` `Alerts` `Risk Management` `Regulatory Compliance` `AI Act` `Incident Response`
-
