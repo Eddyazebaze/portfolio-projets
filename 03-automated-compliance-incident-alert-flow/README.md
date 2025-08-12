@@ -203,10 +203,9 @@ Cette automatisation permet :
 
 ---
 
-## 13) Arborescence recommandée
+13) Arborescence recommandée
 
 ```text
-
 03-automated-compliance-incident-alert-flow/
 ├─ README.md
 ├─ /docs
@@ -220,6 +219,7 @@ Cette automatisation permet :
 │  └─ teams_adaptive_card.json
 └─ /scenarios
    └─ make-scenario.json   # (export Make ultérieurement)
+```
 
 ---
 
@@ -233,6 +233,5 @@ Chef de projet IT stratégique – Expert GRC • IA • Data & Insights • Cyb
 
 ---
 
-**🏷️ Tags**
-
+**🏷️ Tags**  
 `Make.com` `Automation` `Compliance` `Incident Management` `ITSM` `GRC` `SIEM` `Slack` `Google Sheets` `Workflow Automation` `Business Process` `Alerts` `Risk Management` `Regulatory Compliance` `AI Act` `Incident Response`
