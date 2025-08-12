@@ -1,0 +1,8 @@
+*Alerte Conformité*
+
+:briefcase: *Projet :* {{1.project_name}}
+:scroll: *Règle :* {{1.rule_name}}
+:bookmark_tabs: *Régulation :* {{1.regulation}}
+:warning: *Gravité :* {{1.severity}}
+:page_facing_up: *Message :* {{1.message}}
+:link: *Lien :* {{1.link}}

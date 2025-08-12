@@ -1,0 +1,33 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "🚨 **Alerte Conformité**",
+      "weight": "Bolder",
+      "size": "Large",
+      "color": "Attention",
+      "wrap": true
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        { "title": "🚨 Projet", "value": "MedAI Clinical Trial Optimizer" },
+        { "title": "📜 Règle", "value": "Evidence of Data Governance" },
+        { "title": "📑 Régulation", "value": "AI Act" },
+        { "title": "⚠️ Gravité", "value": "Critical" },
+        { "title": "📝 Message", "value": "No evidence of dataset governance provided" },
+        { "title": "🔗 Lien", "value": "[Consulter la documentation](https://wiki/internal/ai-governance)" }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "🔍 Voir plus",
+      "url": "https://wiki/internal/ai-governance"
+    }
+  ]
+}
