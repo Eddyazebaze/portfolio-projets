@@ -37,7 +37,7 @@ Cette première version V0 montre un flux simple et fonctionnel, avec des pistes
 
 ---
 
-3) Démo rapide (60 secondes)
+## 3) Démo rapide (60 secondes)
 
 1. Ouvrir **ReqBin** (ou Postman). Méthode **POST** → URL du **webhook Make**.  
 2. Body (**JSON**) :
@@ -203,7 +203,7 @@ Cette automatisation permet :
 
 ---
 
-13) Arborescence recommandée
+## 13) Arborescence recommandée
 
 ```text
 03-automated-compliance-incident-alert-flow/
