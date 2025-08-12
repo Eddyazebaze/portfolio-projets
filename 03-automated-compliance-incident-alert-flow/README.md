@@ -206,6 +206,7 @@ Cette automatisation permet :
 ## 13) Arborescence recommandée
 
 ```text
+
 03-automated-compliance-incident-alert-flow/
 ├─ README.md
 ├─ /docs
