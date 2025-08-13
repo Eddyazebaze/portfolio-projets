@@ -1,6 +1,6 @@
 # 🛡️ AI Act Readiness Scorecard  
 
-**Auto-évaluation de conformité pour systèmes IA – Orientée DSI / CTO / Architectes**  
+**Auto-évaluation de conformité pour systèmes IA - Orientée DSI / CTO / Architectes**  
 
 *100% statique • Zero dépendance • Bilingue FR/EN • Mode sombre • Prêt audit*
 
