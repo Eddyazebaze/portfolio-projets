@@ -17,7 +17,7 @@ Ce dépôt GitHub regroupe une série de projets **démonstrateurs** conçus pou
 
 | Projet                           | Description synthétique                                      | GitHub / Démo / Livrable                                |
 |----------------------------------|--------------------------------------------------------------|----------------------------------------------------------|
-| **01 - Assistant Virtuel IA**    | Chatbot IA GRC / PMP® / stratégie IT – sans backend          | [Repo](./01-chatbot-assistant-eddy) · [Démo](https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/27/01/20250727010732-RSM5BWL1.json) |
+| **01 - Assistant Virtuel IA**    |  L’assistant IA vitrine qui transforme une question en plan d’action + RDV : offline, traçable, expert GRC-IA-Data-PMP®          | [Repo](./01-chatbot-assistant-eddy) · [Démo](https://cdn.botpress.cloud/webchat/v3.1/shareable.html?configUrl=https://files.bpcontent.cloud/2025/07/27/01/20250727010732-RSM5BWL1.json) |
 | **02 - AI Act Readiness Scorecard** | Score d’auto-évaluation conformité IA (AI Act)              | [Repo](./02-ai-act-readiness-scorecard) · [Scorecard](https://ai-act-score.vercel.app) |
 | **03 - Automated Compliance & Incident Alert Flow** | Alerte réglementaire automatisée (Make.com) | [Repo](./03-automated-compliance-incident-alert-flow) · [Reporting](./03-automated-compliance-incident-alert-flow/livrable-alert-flow.md) |
 | **04 - Audit Sécurité WordPress**| Audit OWASP ZAP d’un site WordPress                          | [Repo](./04-audit-securite-wordpress) · [Synthèse](./04-audit-securite-wordpress/exports/security-summary.md) |
