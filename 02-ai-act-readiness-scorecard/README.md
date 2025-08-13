@@ -178,4 +178,4 @@ Ce projet est conçu par **Eddy AZEBAZE** - Chef de projet IT stratégique, spé
 
 > *"La conformité n’est pas un fardeau.  
 > C’est une **condition de la performance durable** du système d’information."*  
-> — Eddy AZEBAZE, 2025
+> **Eddy AZEBAZE, 2025**
