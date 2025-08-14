@@ -270,11 +270,22 @@ const styles = StyleSheet.create({
     height: 120,
     textAlignVertical: 'top',
   },
-  pickerContainer: {
+  pickerButton: {
     borderWidth: 1,
     borderColor: '#ddd',
     borderRadius: 8,
+    padding: 16,
     backgroundColor: '#fff',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  pickerButtonText: {
+    fontSize: 16,
+    color: '#333',
+  },
+  pickerPlaceholder: {
+    color: '#999',
   },
   charCount: {
     fontSize: 12,
@@ -305,25 +316,54 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
   },
-});
-
-const pickerSelectStyles = StyleSheet.create({
-  inputIOS: {
-    fontSize: 16,
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'flex-end',
+  },
+  modalContent: {
+    backgroundColor: '#fff',
+    borderTopLeftRadius: 16,
+    borderTopRightRadius: 16,
+    maxHeight: '70%',
+  },
+  modalHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: '#e0e0e0',
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#333',
+  },
+  modalCloseButton: {
+    padding: 4,
+  },
+  modalList: {
+    maxHeight: 300,
+  },
+  modalItem: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     paddingVertical: 16,
     paddingHorizontal: 16,
-    color: '#333',
-    paddingRight: 40,
+    borderBottomWidth: 1,
+    borderBottomColor: '#f0f0f0',
   },
-  inputAndroid: {
+  modalItemSelected: {
+    backgroundColor: '#f0f8ff',
+  },
+  modalItemText: {
     fontSize: 16,
-    paddingHorizontal: 16,
-    paddingVertical: 16,
     color: '#333',
-    paddingRight: 40,
   },
-  iconContainer: {
-    top: 20,
-    right: 12,
+  modalItemTextSelected: {
+    color: '#1e88e5',
+    fontWeight: '600',
   },
 });
