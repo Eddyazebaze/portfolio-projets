@@ -1,0 +1,37 @@
+# Application Mobile - AI Act Readiness Scorecard
+
+L’outil **AI Act Readiness Scorecard** est également disponible en version **mobile**, développé spécifiquement pour **iOS**. Cette version permet aux décideurs IT (DSI, CTO, DPO) d’effectuer une auto-évaluation rapide de la conformité de leurs systèmes IA, directement depuis leur smartphone.
+
+## Contenu du dossier
+
+Ce dossier contient :
+- `exports/emergent-export.zip` : Fichier ZIP généré depuis Emergent.sh, incluant :
+  - La configuration de l’application mobile
+  - Le visuel personnalisé et l’interface configurée
+  - Les données intégrées et options sélectionnées
+
+## Utilisation recommandée
+
+- **Pour dupliquer le projet dans Emergent.sh et personnaliser selon vos besoins.**
+- **Pour héberger sur Vercel ou intégrer dans un autre outil visuel (Notion, site...).**
+
+## Capture d’écran de l’application mobile
+
+#### Écran d’accueil
+![Écran d'accueil de l'application mobile](screenshots/home-screen.png)
+
+#### Résultats des use cases
+
+| Contexte | Score | Niveau | Capture |
+|----------|-------|--------|---------|
+| **Scoring crédit (finance)** | 5/24 | ❌ Insuffisant | ![Scoring crédit](screenshots/score-credit-assist-ai.png) |
+| **Tri médical (pharma)** | 20/24 | 🔶 Moyen | ![Tri médical](screenshots/score-neuroscan-ai.png) |
+| **Chatbot RH (retail)** | 22/24 | ✅ Bon | ![Chatbot RH](screenshots/score-hr-assistant-pro.png) |
+
+## Mode d’emploi
+
+1. Téléchargez le fichier ZIP depuis [cette section](exports/emergent-export.zip).
+2. Décompressez-le pour accéder à l’application mobile.
+3. Suivez les instructions fournies par Emergent.sh pour déployer l’application.
+
+> ✅ L’application fonctionne 100 % hors ligne. Aucune donnée n’est collectée.
