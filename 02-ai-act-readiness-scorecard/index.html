@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🛡️ AI Act Readiness Scorecard</title>
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3d1e5 100%);
+      --card-bg: #ffffff;
+      --primary: #1e88e5;
+      --primary-dark: #1565c0;
+      --text: #212121;
+      --border: #bdbdbd;
+      --danger: #e53935;
+      --warning: #fb8c00;
+      --success: #43a047;
+      --gray: #757575;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    .header {
+      text-align: center;
+      padding: 15px;
+      background: var(--primary);
+      color: white;
+      border-radius: 12px 12px 0 0;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .header .ribbon {
+      display: inline-block;
+      background: #ffeb3b;
+      color: #000;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.9em;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 1.6em;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 0.9em;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border: 1px solid var(--border);
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+    input[type="text"], textarea, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    .radio-group {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .radio-option {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    input[type="radio"] {
+      accent-color: var(--primary);
+    }
+    .question {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px dashed #eee;
+    }
+    .question:last-child {
+      border-bottom: none;
+    }
+    .btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn:hover {
+      background: var(--primary-dark);
+    }
+    .btn:active {
+      transform: translateY(1px);
+    }
+    .results {
+      margin-top: 20px;
+    }
+    .score-display {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 10px;
+    }
+    .badge.insuffisant { background: var(--danger); }
+    .badge.moyen { background: var(--warning); }
+    .badge.bon { background: var(--success); }
+    .progress-container {
+      width: 100%;
+      height: 12px;
+      background: #e0e0e0;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .progress-bar {
+      height: 100%;
+      background: var(--primary);
+      border-radius: 6px;
+      transition: width 0.4s ease;
+    }
+    .risk-note {
+      font-style: italic;
+      color: var(--gray);
+      margin-bottom: 15px;
+    }
+    .actions {
+      margin-top: 15px;
+    }
+    .action-item {
+      margin-bottom: 8px;
+      padding-left: 18px;
+      position: relative;
+    }
+    .action-item::before {
+      content: attr(data-priority);
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+      font-size: 0.9em;
+      width: 16px;
+      height: 16px;
+      text-align: center;
+      line-height: 16px;
+      border-radius: 4px;
+      color: white;
+    }
+    .action-item[data-priority="P1"]::before {
+      background: var(--danger);
+    }
+    .action-item[data-priority="P2"]::before {
+      background: var(--warning);
+    }
+    .action-item[data-priority="P3"]::before {
+      background: var(--success);
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      color: var(--gray);
+      font-size: 0.9em;
+    }
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .export-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    @media print {
+      .export-buttons, .footer a[href] {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="ribbon">🧭 AI Act • Readiness</div>
+      <h1>🛡️ AI Act Readiness Scorecard</h1>
+      <p class="subtitle">Aucune donnée n’est stockée côté serveur.</p>
+    </div>
+
+    <div class="card">
+      <h2>📋 Contexte du projet</h2>
+      <div class="form-group">
+        <label for="projectName">Nom du projet</label>
+        <input type="text" id="projectName" placeholder="Nom de votre système IA" />
+      </div>
+      <div class="form-group">
+        <label for="sector">Secteur</label>
+        <select id="sector">
+          <option value="">Sélectionner un secteur</option>
+          <option value="pharma">Pharma/Health</option>
+          <option value="banque">Banque/Assurance</option>
+          <option value="public">Public</option>
+          <option value="industrie">Industrie</option>
+          <option value="retail">Retail</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="description">Description (280 caractères max)</label>
+        <textarea id="description" maxlength="280" placeholder="Brève description du système IA..."></textarea>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🔍 Questionnaire</h2>
+      <div class="form-group">
+        <label>Haut risque ?</label>
+        <div class="radio-group">
+          <span class="radio-option"><input type="radio" name="highRisk" value="oui" id="hr-oui" /><label for="hr-oui">Oui</label></span>
+          <span class="radio-option"><input type="radio" name="highRisk" value="non" id="hr-non" checked /><label for="hr-non">Non</label></span>
+        </div>
+        <small style="color:var(--gray)">Informateur uniquement – ne participe pas au score.</small>
+      </div>
+
+      <!-- Axe 1: Gouvernance -->
+      <div class="question">
+        <label>1. Existence d’un cadre de gouvernance IA formalisé ?</label>
+        <div class="radio-group">
+          <span class="radio-option"><input type="radio" name="q1" value="0" required /><label>0</label></span>
+          <span class="radio-option"><input type="radio" name="q1" value="1" /><label>1</label></span>
+          <span class="radio-option"><input type="radio" name="q1" value="3" /><label>3</label></span>
+        </div>
+      </div>
+      <div class="question">
+        <label>2. Mise en place d’un comité d’éthique ou de conformité IA ?</label>
+        <div class="radio-group">
+          <span class="radio-option"><input type="radio" name="q2" value="0" required /><label>0</label></span>
+          <span class="radio-option"><input type="radio" name="q2" value="1" /><label>1</label></span>
+          <span class="radio-option"><input type="radio" name="q2" value="3" /><label>3</label></span>
+        </div>
+      </div>
+
+      <!-- Axe 2: Documentation & Transparence -->
+      <div class="question">
+        <label>3. Documentation technique complète du système IA ?</label>
+        <div class="radio-group">
+          <span class="radio-option"><input type="radio" name="q3" value="0" required /><label>0</label></span>
+          <span class="radio-option"><input type="radio" name="q3" value="1" /><label>1</label></span>
+          <span class="radio-option"><input type="radio" name="q3" value="3" /><label>3</label></span>
+        </div>
+      </div>
+      <div class="question">
+        <label>4. Transparence vis-à-vis des utilisateurs (information sur l’usage de l’IA) ?</label>
+        <div class="radio-group">
+          <span class="radio-option"><input type="radio" name="q4" value="0" required /><label>0</label></span>
+          <span class="radio-option"><input type="radio" name="q4" value="1" /><label>1</label></span>
+          <span class="radio-option"><input type="radio" name="q4" value="3" /><label>3</label></span>
+        </div>
+      </div>
+
+      <!-- Axe 3: Sécurité & Robustesse -->
+      <div class="question">
+        <label>5. Tests de robustesse et de sécurité effectués ?</label>
+        <div class="radio-group">
+          <span class="radio-option"><input type="radio" name="q5" value="0" required /><label>0</label></span>
+          <span class="radio-option"><input type="radio" name="q5" value="1" /><label>1</label></span>
+          <span class="radio-option"><input type="radio" name="q5" value="3" /><label>3</label></span>
+        </div>
+      </div>
+      <div class="question">
+        <label>6. Surveillance continue des performances en production ?</label>
+        <div class="radio-group">
+          <span class="radio-option"><input type="radio" name="q6" value="0" required /><label>0</label></span>
+          <span class="radio-option"><input type="radio" name="q6" value="1" /><label>1</label></span>
+          <span class="radio-option"><input type="radio" name="q6" value="3" /><label>3</label></span>
+        </div>
+      </div>
+
+      <!-- Axe 4: Gestion des droits et biais -->
+      <div class="question">
+        <label>7. Évaluation des biais (genre, origine, etc.) ?</label>
+        <div class="radio-group">
+          <span class="radio-option"><input type="radio" name="q7" value="0" required /><label>0</label></span>
+          <span class="radio-option"><input type="radio" name="q7" value="1" /><label>1</label></span>
+          <span class="radio-option"><input type="radio" name="q7" value="3" /><label>3</label></span>
+        </div>
+      </div>
+      <div class="question">
+        <label>8. Respect des droits fondamentaux (protection des données, non-discrimination) ?</label>
+        <div class="radio-group">
+          <span class="radio-option"><input type="radio" name="q8" value="0" required /><label>0</label></span>
+          <span class="radio-option"><input type="radio" name="q8" value="1" /><label>1</label></span>
+          <span class="radio-option"><input type="radio" name="q8" value="3" /><label>3</label></span>
+        </div>
+      </div>
+
+      <button class="btn" onclick="compute()">Calculer le score</button>
+    </div>
+
+    <div class="card results" id="results" style="display:none">
+      <h2>📊 Résultats</h2>
+      <div class="score-display">Score : <span id="score">0</span>/24</div>
+      <div class="badge" id="badge">Insuffisant</div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress" style="width:0%"></div>
+      </div>
+      <div id="riskNote" class="risk-note"></div>
+
+      <h3>✅ Plan d’action</h3>
+      <div class="actions" id="actions"></div>
+
+      <div class="export-buttons">
+        <button class="btn" onclick="downloadPlan()">
+          📥 Télécharger le plan (TXT)
+        </button>
+        <button class="btn" onclick="window.print()">
+          🖨️ Imprimer / PDF
+        </button>
+      </div>
+
+      <details style="margin-top:15px">
+        <summary>Contenu brut (copier-coller si téléchargement bloqué)</summary>
+        <textarea id="rawOutput" rows="10" readonly></textarea>
+      </details>
+    </div>
+
+    <!-- FOOTER PRO -->
+    <div class="footer">
+      © 2025 Eddy AZEBAZE — <strong>Je structure, sécurise et accélère vos projets IT.</strong><br>
+      Co-pilotage stratégique, livrables mesurables.<br><br>
+      📅 <a href="https://calendly.com/eddy-azebaze-proton/30min" target="_blank"><strong>Réserver 30 min d'échange</strong></a> · 
+      📧 <a href="mailto:eddy.azebaze@proton.me"><strong>eddy.azebaze@proton.me</strong></a>
+    </div>
+  </div>
+
+  <script>
+    // Gestion des erreurs de sécurité (sandbox)
+    window.addEventListener('error', function(e) {
+      if (e.error && e.error.name === 'SecurityError') {
+        alert("Action bloquée par le navigateur (SecurityError). L'outil fonctionne hors ligne.");
+        e.preventDefault();
+      }
+    });
+
+    function val(name) {
+      const radios = document.querySelectorAll(`input[name="${name}"]`);
+      for (const radio of radios) {
+        if (radio.checked) return parseInt(radio.value);
+      }
+      return 0;
+    }
+
+    function lvl(score) {
+      if (score <= 10) return { level: "Insuffisant", class: "insuffisant", risk: "Risque élevé : conformité non assurée. Actions urgentes nécessaires." };
+      if (score <= 20) return { level: "Moyen", class: "moyen", risk: "Risque modéré : améliorations nécessaires pour atteindre la conformité." };
+      return { level: "Bon", class: "bon", risk: "Risque faible : bon niveau de conformité à l’AI Act." };
+    }
+
+    function actions() {
+      const recos = [];
+      const sector = document.getElementById("sector").value;
+      const q1 = val("q1"); const q2 = val("q2");
+      const q3 = val("q3"); const q4 = val("q4");
+      const q5 = val("q5"); const q6 = val("q6");
+      const q7 = val("q7"); const q8 = val("q8");
+
+      if (q1 < 3) recos.push({ p: "P1", t: "Établir un cadre de gouvernance IA avec responsabilités claires." });
+      if (q2 < 3) recos.push({ p: "P2", t: "Créer un comité d’éthique ou de conformité IA." });
+      if (q3 < 3) recos.push({ p: "P1", t: "Finaliser la documentation technique du système IA (architecture, données, objectifs)." });
+      if (q4 < 3) recos.push({ p: "P2", t: "Mettre en place des mécanismes de transparence pour informer les utilisateurs." });
+      if (q5 < 3) recos.push({ p: "P1", t: "Effectuer des tests de robustesse, sécurité et résistance aux attaques." });
+      if (q6 < 3) recos.push({ p: "P2", t: "Déployer un système de monitoring en production pour les performances et anomalies." });
+      if (q7 < 3) recos.push({ p: "P1", t: "Lancer une évaluation des biais (démographiques, historiques) dans les données et modèles." });
+      if (q8 < 3) recos.push({ p: "P3", t: "Renforcer les garanties de protection des données et non-discrimination." });
+
+      if (sector === "pharma" || sector === "banque") {
+        if (recos.length < 7) recos.push({ p: "P2", t: "Conformité aux réglementations sectorielles spécifiques (ex: GDPR, HIPAA, Solvabilité II)." });
+      }
+      if (sector === "public") {
+        if (recos.length < 7) recos.push({ p: "P1", t: "Audit d’impact sur les droits fondamentaux pour les systèmes à impact élevé." });
+      }
+
+      while (recos.length < 5 && recos.length > 0) {
+        recos.push(recos[recos.length - 1]);
+      }
+
+      return recos.slice(0, 7);
+    }
+
+    function compute() {
+      const score = val("q1") + val("q2") + val("q3") + val("q4") +
+                    val("q5") + val("q6") + val("q7") + val("q8");
+      const levelInfo = lvl(score);
+      const recos = actions();
+
+      document.getElementById("score").textContent = score;
+      const badge = document.getElementById("badge");
+      badge.textContent = levelInfo.level;
+      badge.className = `badge ${levelInfo.class}`;
+      document.getElementById("progress").style.width = `${(score / 24) * 100}%`;
+      document.getElementById("riskNote").textContent = levelInfo.risk;
+
+      const actionsEl = document.getElementById("actions");
+      actionsEl.innerHTML = "";
+      recos.forEach(r => {
+        const div = document.createElement("div");
+        div.className = "action-item";
+        div.setAttribute("data-priority", r.p);
+        div.textContent = r.t;
+        actionsEl.appendChild(div);
+      });
+
+      const raw = document.getElementById("rawOutput");
+      raw.value = `AI Act Readiness Scorecard\n\n` +
+        `Projet : ${document.getElementById("projectName").value || "Non spécifié"}\n` +
+        `Secteur : ${document.getElementById("sector").options[document.getElementById("sector").selectedIndex]?.text || "Non spécifié"}\n` +
+        `Score : ${score}/24\n` +
+        `Niveau : ${levelInfo.level}\n` +
+        `Risque : ${levelInfo.risk}\n\n` +
+        `Plan d'action :\n${recos.map(r => "- [" + r.p + "] " + r.t).join("\n")}`;
+
+      document.getElementById("results").style.display = "block";
+    }
+
+    function downloadPlan() {
+      const raw = document.getElementById("rawOutput").value;
+      const blob = new Blob([raw], { type: "text/plain;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = `ai-act-readiness-${document.getElementById("projectName").value || "projet"}.txt`;
+      link.click();
+      URL.revokeObjectURL(link.href);
+    }
+  </script>
+</body>
+</html>
