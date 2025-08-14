@@ -1,30 +1,55 @@
-import { Text, View, StyleSheet, Image } from "react-native";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { StatusBar } from 'expo-status-bar';
 
-const EXPO_PUBLIC_BACKEND_URL = process.env.EXPO_PUBLIC_BACKEND_URL;
+import HomeScreen from './screens/HomeScreen';
+import ContextScreen from './screens/ContextScreen';
+import QuestionnaireScreen from './screens/QuestionnaireScreen';
+import ResultsScreen from './screens/ResultsScreen';
 
-export default function Index() {
-  console.log(EXPO_PUBLIC_BACKEND_URL, "EXPO_PUBLIC_BACKEND_URL");
+const Stack = createStackNavigator();
 
+export default function App() {
   return (
-    <View style={styles.container}>
-      <Image
-        source={require("../assets/images/app-image.png")}
-        style={styles.image}
-      />
-    </View>
+    <SafeAreaProvider>
+      <StatusBar style="auto" />
+      <NavigationContainer independent={true}>
+        <Stack.Navigator
+          initialRouteName="Home"
+          screenOptions={{
+            headerStyle: {
+              backgroundColor: '#1e88e5',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }}
+        >
+          <Stack.Screen 
+            name="Home" 
+            component={HomeScreen} 
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen 
+            name="Context" 
+            component={ContextScreen} 
+            options={{ title: 'Contexte du projet' }}
+          />
+          <Stack.Screen 
+            name="Questionnaire" 
+            component={QuestionnaireScreen} 
+            options={{ title: 'Évaluation AI Act' }}
+          />
+          <Stack.Screen 
+            name="Results" 
+            component={ResultsScreen} 
+            options={{ title: 'Résultats' }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#0c0c0c",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  image: {
-    width: "100%",
-    height: "100%",
-    resizeMode: "contain",
-  },
-});
