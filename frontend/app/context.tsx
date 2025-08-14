@@ -10,9 +10,9 @@ import {
   KeyboardAvoidingView,
   Platform,
   Alert,
+  Modal,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import RNPickerSelect from 'react-native-picker-select';
 import { useRouter } from 'expo-router';
 import { Stack } from 'expo-router';
 
@@ -29,6 +29,7 @@ export default function ContextScreen() {
   const [projectName, setProjectName] = useState('');
   const [sector, setSector] = useState('');
   const [description, setDescription] = useState('');
+  const [showSectorModal, setShowSectorModal] = useState(false);
 
   const handleContinue = () => {
     if (!projectName.trim()) {
@@ -54,6 +55,16 @@ export default function ContextScreen() {
       pathname: '/questionnaire',
       params: { contextData: JSON.stringify(contextData) }
     });
+  };
+
+  const getSectorLabel = (value: string) => {
+    const sector = sectors.find(s => s.value === value);
+    return sector ? sector.label : 'Sélectionnez votre secteur...';
+  };
+
+  const selectSector = (value: string) => {
+    setSector(value);
+    setShowSectorModal(false);
   };
 
   const remainingChars = 280 - description.length;
@@ -99,23 +110,19 @@ export default function ContextScreen() {
                 {/* Sector */}
                 <View style={styles.inputGroup}>
                   <Text style={styles.label}>Secteur d'activité *</Text>
-                  <View style={styles.pickerContainer}>
-                    <RNPickerSelect
-                      onValueChange={(value) => setSector(value)}
-                      items={sectors}
-                      style={pickerSelectStyles}
-                      placeholder={{
-                        label: 'Sélectionnez votre secteur...',
-                        value: null,
-                        color: '#999',
-                      }}
-                      value={sector}
-                      useNativeAndroidPickerStyle={false}
-                      Icon={() => {
-                        return <Ionicons name="chevron-down" size={24} color="#666" />;
-                      }}
-                    />
-                  </View>
+                  <TouchableOpacity
+                    style={styles.pickerButton}
+                    onPress={() => setShowSectorModal(true)}
+                    activeOpacity={0.7}
+                  >
+                    <Text style={[
+                      styles.pickerButtonText,
+                      !sector && styles.pickerPlaceholder
+                    ]}>
+                      {getSectorLabel(sector)}
+                    </Text>
+                    <Ionicons name="chevron-down" size={24} color="#666" />
+                  </TouchableOpacity>
                 </View>
 
                 {/* Description */}
@@ -155,6 +162,52 @@ export default function ContextScreen() {
             </TouchableOpacity>
           </View>
         </KeyboardAvoidingView>
+
+        {/* Sector Modal */}
+        <Modal
+          visible={showSectorModal}
+          transparent={true}
+          animationType="slide"
+          onRequestClose={() => setShowSectorModal(false)}
+        >
+          <View style={styles.modalOverlay}>
+            <View style={styles.modalContent}>
+              <View style={styles.modalHeader}>
+                <Text style={styles.modalTitle}>Sélectionnez votre secteur</Text>
+                <TouchableOpacity
+                  onPress={() => setShowSectorModal(false)}
+                  style={styles.modalCloseButton}
+                >
+                  <Ionicons name="close" size={24} color="#666" />
+                </TouchableOpacity>
+              </View>
+              
+              <ScrollView style={styles.modalList}>
+                {sectors.map((sectorOption) => (
+                  <TouchableOpacity
+                    key={sectorOption.value}
+                    style={[
+                      styles.modalItem,
+                      sector === sectorOption.value && styles.modalItemSelected
+                    ]}
+                    onPress={() => selectSector(sectorOption.value)}
+                    activeOpacity={0.7}
+                  >
+                    <Text style={[
+                      styles.modalItemText,
+                      sector === sectorOption.value && styles.modalItemTextSelected
+                    ]}>
+                      {sectorOption.label}
+                    </Text>
+                    {sector === sectorOption.value && (
+                      <Ionicons name="checkmark" size={20} color="#1e88e5" />
+                    )}
+                  </TouchableOpacity>
+                ))}
+              </ScrollView>
+            </View>
+          </View>
+        </Modal>
       </SafeAreaView>
     </>
   );
