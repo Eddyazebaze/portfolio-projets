@@ -29,22 +29,22 @@ Permettre aux **décideurs IT (DSI, CTO, DPO)** d’effectuer une **auto-évalua
 
 mobile/
 ├── exports/
-│ └── emergent-export.zip → Projet complet (réimportable dans Emergent.sh)
+│   └── emergent-export.zip
 ├── screenshots/
-│ ├── home-screen.png → Écran d’accueil de l’app mobile
-│ ├── score-credit-assist-ai.png → Résultat : Scoring crédit (5/24)
-│ ├── score-neuroscan-ai.png → Résultat : Tri médical (20/24)
-│ └── score-hr-assistant-pro.png → Résultat : Chatbot RH (22/24)
-└── README.md → Ce fichier de documentation
+│   ├── home-screen.png
+│   ├── score-credit-assist-ai.png
+│   ├── score-neuroscan-ai.png
+│   └── score-hr-assistant-pro.png
+└── README.md
 
 ## 📸 Captures d’écran incluses
 
 | Fichier | Description |
 |--------|-------------|
-| `home-screen.png` | Écran d’accueil : titre "AI Act Check", bouton "Commencer l’évaluation", branding Eddy AZEBAZE |
-| `score-credit-assist-ai.png` | Résultat du cas **Scoring crédit (banque)** : Score 5/24, niveau ❌ Insuffisant |
-| `score-neuroscan-ai.png` | Résultat du cas **Tri médical (santé)** : Score 20/24, niveau 🔶 Moyen |
-| `score-hr-assistant-pro.png` | Résultat du cas **Chatbot RH (entreprise)** : Score 22/24, niveau ✅ Bon |
+| ![Écran d'accueil](screenshots/home-screen.png) | Écran d’accueil : titre "AI Act Check", bouton "Commencer l’évaluation", branding Eddy AZEBAZE |
+| ![Scoring crédit](screenshots/score-credit-assist-ai.png) | Résultat du cas **Scoring crédit (banque)** : Score 5/24, niveau ❌ Insuffisant |
+| ![Tri médical](screenshots/score-neuroscan-ai.png) | Résultat du cas **Tri médical (santé)** : Score 20/24, niveau 🔶 Moyen |
+| ![Chatbot RH](screenshots/score-hr-assistant-pro.png) | Résultat du cas **Chatbot RH (entreprise)** : Score 22/24, niveau ✅ Bon |
 
 > 💡 Ces snapshots illustrent des **cas réels** avec des scores variés, pour montrer la maturité IT du système.
 
