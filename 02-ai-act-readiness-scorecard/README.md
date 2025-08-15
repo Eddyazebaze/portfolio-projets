@@ -6,12 +6,14 @@
 [![AI Act Ready](https://img.shields.io/badge/AI_Act_Ready-Compliant-brightgreen?logo=europen&logoColor=white&labelColor=1e88e5)](https://github.com/eddyazebaze/ai-act-readiness-scorecard)
 [📱 Mobile & Web] • [✅ Hors ligne] • [🇫🇷 FR] • [🔒 Zero data]
 
-![Interface du AI Act Readiness Scorecard - Mode clair](/assets/screenshot-responsive-clair.png)
+![Interface du AI Act Readiness Scorecard - Mode clair](assets/screenshot-responsive-clair.png)
 
-➡️ **[👉 Accéder à la démo web](https://eddyazebaze.github.io/ai-act-readiness-scorecard)**
+➡️ **[👉 Accéder à la démo web](https://drive.google.com/file/d/1HpOpIDhgdS3ZMlbaKKTIynjAB1n4rhrZ/view?usp=drive_link)**
 
 > *"Un contrôle incomplet n’est pas un contrôle."*  
 > Cet outil évalue la **maturité IT réelle** d’un système IA face à l’AI Act — pas seulement la compliance théorique.
+
+---
 
 ## 🎯 **À propos du projet**
 
@@ -93,13 +95,13 @@ mobile/
 
 ---
 
-## 📸 **Exemples de cas d’usage**
+## 📊 Exemples de cas d’usage
 
 | Contexte | Score | Niveau | Snapshot |
-|--------|------|--------|----------|
-| **Scoring crédit (banque)** | 5/24 | ❌ Insuffisant | ![Scoring crédit](/assets/snapshot-scoring-credit-clair.png) |
-| **Tri médical (santé)** | 20/24 | 🔶 Moyen | ![Tri médical](/assets/snapshot-tri-medical-clair.png) |
-| **Chatbot RH (entreprise)** | 22/24 | ✅ Bon | ![Chatbot RH](/assets/snapshot-chatbot-rh-clair.png) |
+|----------|-------|--------|----------|
+| Scoring crédit (banque) | 5/24 | ❌ Insuffisant | ![Scoring crédit](assets/snapshot-scoring-credit-clair.png) |
+| Tri médical (santé) | 20/24 | 🔶 Moyen | ![Tri médical](assets/snapshot-tri-medical-clair.png) |
+| Chatbot RH (entreprise) | 22/24 | ✅ Bon | ![Chatbot RH](assets/snapshot-chatbot-rh-clair.png) |
 
 > 💡 *Ces snapshots illustrent des cas réels. La version mobile est en thème clair uniquement.*
 
