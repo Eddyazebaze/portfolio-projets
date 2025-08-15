@@ -8,7 +8,7 @@
 
 ![Interface du AI Act Readiness Scorecard - Mode clair](assets/screenshot-responsive-clair.png)
 
-➡️ **[👉 Accéder à la démo web](https://drive.google.com/file/d/1HpOpIDhgdS3ZMlbaKKTIynjAB1n4rhrZ/view?usp=drive_link)**
+➡️ **[![Vidéo démo - AI Act Readiness Scorecard](https://img.youtube.com/vi/1HpOpIDhgdS3ZMlbaKKTIynjAB1n4rhrZ/0.jpg)](https://drive.google.com/file/d/1HpOpIDhgdS3ZMlbaKKTIynjAB1n4rhrZ/view?usp=drive_link)**
 
 > *"Un contrôle incomplet n’est pas un contrôle."*  
 > Cet outil évalue la **maturité IT réelle** d’un système IA face à l’AI Act — pas seulement la compliance théorique.
