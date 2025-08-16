@@ -40,6 +40,9 @@ Ce projet permet d’illustrer :
 
 📂 **Données nettoyées disponibles :**  [📥 Télécharger - Données nettoyées GHED (XLSX)](https://drive.google.com/file/d/1ThbxSTJ_AZGdsFAoW6tD0f9WdM6ngGWd/view)
 
+> ℹ️ **Note : fichier volumineux.** Google Drive ne peut pas afficher car “Fichier trop volumineux pour être ouvert”.  
+> Cliquez sur **Télécharger** (flèche ↓ en haut à droite) pour récupérer le fichier.
+
 ---
 
 ## 📋 Livrables
