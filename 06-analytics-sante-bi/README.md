@@ -38,7 +38,7 @@ Ce projet permet d’illustrer :
 - **MS Excel**  pour le nettoyage
 - **Structuration GitHub** + documentation complète
 
-📂 **Données nettoyées disponibles ici** : [📥 Télécharger - Données nettoyées GHED (XLSX)](https://docs.google.com/spreadsheets/d/1ThbxSTJ_AZGdsFAoW6tD0f9WdM6ngGWd/export?format=xlsx)
+📂 **Données nettoyées disponibles :**  [📥 Télécharger - Données nettoyées GHED (XLSX)](https://drive.google.com/file/d/1ThbxSTJ_AZGdsFAoW6tD0f9WdM6ngGWd/view)
 
 ---
 
