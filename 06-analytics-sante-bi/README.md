@@ -35,10 +35,10 @@ Ce projet permet d’illustrer :
 
 - **Données OMS** (WHO GHED) : [Global Health Expenditure Database](https://apps.who.int/nha/database)
 - **Power BI** pour la visualisation
-- **Excel** pour le nettoyage
+- **MS Excel**  pour le nettoyage
 - **Structuration GitHub** + documentation complète
 
-📂 **Données nettoyées disponibles ici** : [Google Drive – GHED clean](https://drive.google.com/drive/folders/1kI5mUVfXnR9dz-EHxSg_qVtxF04NBf-M)
+📂 **Données nettoyées disponibles ici** : [📥 Télécharger - Données nettoyées GHED (XLSX)](https://docs.google.com/spreadsheets/d/1ThbxSTJ_AZGdsFAoW6tD0f9WdM6ngGWd/export?format=xlsx)
 
 ---
 
