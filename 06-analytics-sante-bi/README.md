@@ -118,7 +118,7 @@ Cadre **en 4 temps**, orienté **valeur** et **adoption** :
 
 ---
 
-## 🧠 Insights clés (2012–2022)
+## 🧠 Insights clés (2012 - 2022)
 
 ### Évolution des dépenses de santé / PIB
 - **De 11,3 % (2012) à 11,9 % (2022)**  
@@ -135,7 +135,7 @@ Cadre **en 4 temps**, orienté **valeur** et **adoption** :
 
 ---
 
-## 🔮 Projection 2023–2027 (bonus)
+## 🔮 Projection 2023 - 2027 (bonus)
 
 Sur la base des **tendances historiques**, une projection linéaire a été réalisée entre 2023 et 2027.  
 Elle repose sur une hypothèse de **croissance budgétaire maîtrisée** après la période COVID.
@@ -169,12 +169,12 @@ Ce projet peut servir de **base décisionnelle** pour :
 
 Ce projet est destiné aux :
 
-- **DSI** – gouvernance data & IT
-- **CDO** – stratégie data-driven & valorisation des insights
-- **PMO / Chefs de projet** – pilotage stratégique
-- **Responsables financiers / transformation** – analyse ROI / dépenses publiques
-- **RSSI / Responsables conformité** – traçabilité des dashboards santé
-- **Jury / Enseignants / mentors** – étude de cas ou support pédagogique
+- **DSI** - gouvernance data & IT
+- **CDO** - stratégie data-driven & valorisation des insights
+- **PMO / Chefs de projet** - pilotage stratégique
+- **Responsables financiers / transformation** - analyse ROI / dépenses publiques
+- **RSSI / Responsables conformité** - traçabilité des dashboards santé
+- **Jury / Enseignants / mentors** - étude de cas ou support pédagogique
 
 ---
 
