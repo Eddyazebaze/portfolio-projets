@@ -25,8 +25,6 @@
   <!-- Contexte -->
   <img alt="Domaine Santé publique"
        src="https://img.shields.io/badge/Domaine-Sant%C3%A9%20publique-9b59b6?style=for-the-badge">
-  <img alt="Années 2012–2022"
-       src="https://img.shields.io/badge/Ann%C3%A9es-2012%E2%80%932022-6b7280?style=for-the-badge">
 </p>
 
 
@@ -99,7 +97,6 @@ Ils sont disponibles dans le dossier **outputs** du dépôt : 👉 https://githu
 | **Analyse Dépenses Santé France (2012–2022) - Notes d’analyse** | DOCX | Notes détaillées : % PIB santé, dépenses per capita, répartition public/privé, insights & actions | [Télécharger le DOCX](https://github.com/Eddyazebaze/portfolio-projets/blob/main/06-analytics-sante-bi/reporting/Analyse_Depenses%20Sante%20France_2012-2022_Eddy%20AZEBAZE.docx.docx) |
 
 **Dossier complet (reporting)** : https://github.com/Eddyazebaze/portfolio-projets/tree/main/06-analytics-sante-bi/reporting  
-**Dashboards Power BI (PBIX)** : https://github.com/Eddyazebaze/portfolio-projets/tree/main/06-analytics-sante-bi/outputs
 
 ---
 
@@ -227,14 +224,10 @@ Votre **co-pilote** pour sécuriser et délivrer vos projets IT à fort enjeu.
   </a>
 </p>
 
-- ✉️ **Email** : [eddy.azebaze@proton.me](mailto:eddy.azebaze@proton.me)  
-- 🔗 **LinkedIn** : [/in/eddy-azebaze-034a20226](https://www.linkedin.com/in/eddy-azebaze-034a20226/)  
-- 📅 **RDV 30 min** : [Calendly](https://calendly.com/eddy-azebaze-proton/30min?month=2025-08)
-
 > “On ne livre pas un projet. On construit un **actif stratégique** : durable, traçable et auditable.”
 
 ## 🔎 Keywords
 
-**FR :** santé publique, dépenses de santé, OMS, GHED, France, 2012-2022, budget santé, % PIB santé, dépenses par habitant, financement public/privé, comptes de la santé, série temporelle, inflation santé, indicateurs santé, open data, nettoyage de données, analyse de données, data storytelling, business intelligence, Power BI, tableaux de bord, visualisation, KPI, recommandations stratégiques
+> **FR :** santé publique, dépenses de santé, OMS, GHED, France, 2012-2022, budget santé, % PIB santé, dépenses par habitant, financement public/privé, comptes de la santé, série temporelle, inflation santé, indicateurs santé, open data, nettoyage de données, analyse de données, data storytelling, business intelligence, Power BI, tableaux de bord, visualisation, KPI, recommandations stratégiques
 
-**EN :** public health, health expenditure, WHO, GHED, France, 2012-2022, health budget, health spending as % of GDP, per-capita health spending, public vs private financing, health accounts, time series, health inflation, health indicators, open data, data cleaning, data analysis, data storytelling, business intelligence, Power BI, dashboards, data visualization, KPIs, strategic recommendations
+> **EN :** public health, health expenditure, WHO, GHED, France, 2012-2022, health budget, health spending as % of GDP, per-capita health spending, public vs private financing, health accounts, time series, health inflation, health indicators, open data, data cleaning, data analysis, data storytelling, business intelligence, Power BI, dashboards, data visualization, KPIs, strategic recommendations
