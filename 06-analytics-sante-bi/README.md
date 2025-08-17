@@ -39,6 +39,7 @@ Explorer, visualiser et interpréter les **données de santé publique** pour :
 - Mettre en lumière **l’évolution budgétaire santé en % du PIB et par habitant**
 - Évaluer **la stabilité du modèle de financement** (public/privé)
 - Formuler des **recommandations concrètes** pour les décideurs **IT/Data**
+- Projeter l’évolution **2023 - 2027** du ratio **dépenses de santé / PIB** *(Bonus)*
 
 ---
 
